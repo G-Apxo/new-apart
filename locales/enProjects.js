@@ -1,0 +1,15 @@
+export default {
+  title: "Comming Soon",
+  prj1d: "Done",
+  prj1t: "Old City Panorama",
+  prj1l: "Location",
+  prj1lt: "TBILISI,GEORGIA BUKHAIDZE 6A",
+  prj1c: "Create Date",
+  prj1ct: "2022",
+  prj2d: "Done",
+  prj2t: "Bukhaidze",
+  prj2l: "Location",
+  prj2lt: "TBILISI,GEORGIA BUKHAIDZE 6A",
+  prj2c: "Create Date",
+  prj2ct: "2022",
+};
