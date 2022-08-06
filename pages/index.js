@@ -48,25 +48,25 @@ export default function IndexPage() {
                 </Row>
               </Container>
               <Container className="container-marginer additional__padding">
-      <Row className="justify-content-between">
-        <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
-          <Row>
-            <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
-              <p className="home--section__texts">About us</p>
-            </Col>
-            <Col></Col>
-            <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8">
-              <h1 className="section1-title">
-                RENEWED LIFE
-                <br /> OF OLD TBILISI
-              </h1>
+        <Row className="justify-content-between">
+          <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
+            <Row>
+              <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
+                <p className="home--section__texts">About us</p>
+              </Col>
+              <Col></Col>
+              <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8">
+                <h1 className="section1-title">
+                  RENEWED LIFE
+                  <br /> OF OLD TBILISI
+                </h1>
 
-              <p className="section1-subtitle">
-                For our team, it is important and a priority to preserve the charm of the old city, to use the
-                old architectural fragments in the modern construction, and at the same time to bring new life
-                to the forgotten neighborhoods.
-              </p>
-            </Col>
+                <p className="section1-subtitle">
+                  For our team, it is important and a priority to preserve the charm of the old city, to use the
+                  old architectural fragments in the modern construction, and at the same time to bring new life
+                  to the forgotten neighborhoods.
+                </p>
+              </Col>
           </Row>
         </Col>
         <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
