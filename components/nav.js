@@ -2,7 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 
-import en from '../locales/en';
+import en from '../locales/enHeader';
 import fr from '../locales/fr';
 
 export default function Nav() {
@@ -28,7 +28,7 @@ export default function Nav() {
         <ul className="flex items-center justify-between space-x-8">
           <li>
             <a
-              href="https://home.cern/about"
+              href="/About"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
               {t.about}
@@ -36,34 +36,34 @@ export default function Nav() {
           </li>
           <li>
             <a
-              href="https://home.cern/news"
+              href="/Investing"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
-              {t.news}
+              {t.investing}
             </a>
           </li>
           <li>
             <a
-              href="https://home.cern/science"
+              href="/projects"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
-              {t.science}
+              {t.projects}
             </a>
           </li>
           <li>
             <a
-              href="https://home.cern/research"
+              href="/Blog"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
-              {t.research}
+              {t.blog}
             </a>
           </li>
           <li>
             <a
-              href="https://home.cern/search/node"
+              href="/Contact"
               className="text-white text-lg text-shadow-sm uppercase hidden md:block tracking-wide"
             >
-              {t.search}
+              {t.contact}
             </a>
           </li>
           <select
