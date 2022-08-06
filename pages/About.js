@@ -36,9 +36,7 @@ export default function IndexPage() {
   return (
     <main>
       <div className="hero">
-        <div className="bg-image">
-          <span className="bg-black opacity-40 absolute w-full h-full z-10" />
-        </div>
+         
         <Nav />
         <Container className="mt-5">
         <h1 className="about-title ">ABOUT US</h1>
