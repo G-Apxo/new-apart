@@ -17,28 +17,6 @@ export default function Nav() {
 
   return (
     <nav>
-      <div className="flex items-center justify-between bg-gray-800 text-white px-8 md:px-16 py-2">
-        <Link href="/">
-          <a>
-            <span className="font-bold">CERN</span>
-            <span className="ml-2 text-gray-400 font-semibold hidden sm:inline-block">
-              {t.subtitle}
-            </span>
-          </a>
-        </Link>
-        <ul className="flex items-center justify-between space-x-4 text-gray-400">
-          <li>
-            <a href="https://home.cern/user/login" className="text-sm">
-              {t.signin}
-            </a>
-          </li>
-          <li>
-            <a href="https://cern.ch/directory" className="text-sm">
-              {t.directory}
-            </a>
-          </li>
-        </ul>
-      </div>
       <ul className="flex items-center justify-between pt-8 px-8 md:px-16">
         <li>
           <Link href="/">
