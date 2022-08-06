@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Button, Row, Container, Col, input } from "react-bootstrap";
-import en from '../locales/en';
-import fr from '../locales/fr';
+import en from '../locales/enAbout';
+import ru from '../locales/ruAbout';
 import Beqa from "../assets/beqa.svg";
 import Quote from "../assets/quote.svg";
 import Team1 from "../assets/apartteam/team1.webp";
@@ -31,7 +31,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === 'en' ? en : fr;
+  const t = locale === 'en' ? en : ru;
 
   return (
     <main>
@@ -39,7 +39,7 @@ export default function IndexPage() {
          
         <Nav />
         <Container className="mt-5">
-        <h1 className="about-title ">ABOUT US</h1>
+        <h1 className="about-title ">{t.title}</h1>
         <Row className="row-marginer justify-content-end">
           <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3" className="d-flex justify-content-center">
             <Image src={Beqa} alt="banner immage" />
@@ -47,12 +47,10 @@ export default function IndexPage() {
           <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5" className="align-items-center d-flex mt-5">
             <div>
               <p>
-                “ started new project OLD CITY PANORAMA whitch is different and special poject in Tbilisi.
-                Project perfectly suits the architectural style of Old Tbilisi, It is located on Bukhaidze
-                Street, in the historical part of Tbilisi. Our goal ”
+             {t.tsubt}
               </p>
-              <h2>Beka Khoperia</h2>
-              <h3>Founder</h3>
+              <h2>{t.tname}</h2>
+              <h3>{t.tpos}</h3>
             </div>
           </Col>
           <Col xs="2" className="no_mobile">
@@ -71,17 +69,11 @@ export default function IndexPage() {
           {/* <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6"> */}
           {/* <Row> */}
           <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="2">
-            <h3 className="about--text__hmod">In 2020 Apart Development</h3>
+            <h3 className="about--text__hmod">{t.ath} </h3>
           </Col>
           <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="4">
             <p className="about--text__ptmod2">
-              started new project OLD CITY PANORAMA whitch is different and special poject in Tbilisi. Project
-              perfectly suits the architectural style of Old Tbilisi, It is located on Bukhaidze Street, in
-              the historical part of Tbilisi. Our goal is to match the exterior of the project perfectly with
-              the wider city planning, which is why the Old City Panorama project includes three buildings and
-              is only eight floors high. The project is also important because it has many sights close to it:
-              one of the most important attractions of the city, the Holy Trinity Cathedral, just 250 meters
-              away, the historic Metekhi Fortress and Temple, and Narikala and Rike Park.
+              {t.att} 
             </p>
           </Col>
           {/* </Row> */}
@@ -97,22 +89,11 @@ export default function IndexPage() {
             xxl="2"
             // className="mt-60 "
           >
-            <h3 className="about--text__hmod">Another advantage</h3>
+            <h3 className="about--text__hmod">{t.ath2}</h3>
           </Col>
           <Col xs="12" lg="12" md="12" sm="12" xl="12" xxl="4">
             <p className="about--text__ptmod__mod ">
-              OLD CITY PANORAMA is the amazing views and greenery of Old Tbilisi. For residents on the first
-              floor, living in “townhouse” type dwellings, we have individual yards. The area includes a
-              swimming pool, spa, gym equipment and a cafe-bar. The apartments are being delivered both in
-              green frame condition and with complete renovation. Buying an apartment with Apart Development
-              is a sensible investment, as we also offer rental service to our customers if they wish, which
-              means that the apartment owner can turn their real estate into a source of income without a lot
-              of effort. Our goal is to continue to strive for progress, to contribute to the urban
-              development of Tbilisi, which means that we want to cover the territories of Old Tbilisi,
-              replace damaged buildings with new residential complexes, which will be the best example of
-              combining the Old Tbilisi architectural style with the new. We want to give new life to Old
-              Tbilisi and create a service focused on the wishes and needs of customers. Apart Development
-              will establish a new lifestyle in Old Tbilisi.
+              {t.att2}
             </p>
           </Col>
           {/* </Row> */}
@@ -126,33 +107,33 @@ export default function IndexPage() {
       <section className="cover mt-120"></section>
       <Container className="mb-120 mt-120">
         <Row className="row-marginer mb-60 ">
-          <h1>OUR TEAM</h1>
+          <h1>{t.tth}</h1>
         </Row>
         <Row className="sixty-row">
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team8} alt="banner immage" />
             {/* //8 */}
-            <h3>თათა დგებუაძე </h3>
-            <p>აღმასრულებელი დირექტორი</p>
+            <h3>{t.tt1} </h3>
+            <p>{t.tt1p}</p>
           </Col>
 
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team10} alt="banner immage" />
             {/* //10 */}
-            <h3>თორნიკე წილოსანი </h3>
-            <p>კომერციული დირექტორი</p>
+            <h3>{t.tt2} </h3>
+            <p>{t.tt2p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team13} alt="banner immage" />
             {/* //13 */}
-            <h3>ლაშა საბაძე</h3>
-            <p>ფინანსური მენეჯერი</p>
+            <h3>{t.tt3} </h3>
+            <p>{t.tt3p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team6} alt="banner immage" />
             {/* //6 */}
-            <h3>ვახტანგ ჩიხრაძე</h3>
-            <p>სტრატეგიული გაყიდვების მენეჯერი</p>
+            <h3>{t.tt4} </h3>
+            <p>{t.tt4p}</p>
           </Col>
         </Row>
 
@@ -160,26 +141,26 @@ export default function IndexPage() {
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team2} alt="banner immage" />
             {/* //2 */}
-            <h3>ანი მურვანიძე </h3>
-            <p>გაყიდვების სამსახურის უფროსი</p>
+            <h3>{t.tt5} </h3>
+            <p>{t.tt5p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team19} alt="banner immage" />
             {/* //19 */}
-            <h3>საბა ჯანაშია</h3>
-            <p> უსაფრთხოების სამსახურის უფროსი</p>
+            <h3>{t.tt6} </h3>
+            <p>{t.tt6p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team3} alt="banner immage" />
             {/* //3 */}
-            <h3>არჩილ კურცხალია</h3>
-            <p> არქიტექტორ-დიზაინერი</p>
+            <h3>{t.tt7} </h3>
+            <p>{t.tt7p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team18} alt="banner immage" />
             {/* //18 */}
-            <h3>ნატუკა ხოფერია </h3>
-            <p>ოფისის მენეჯერი</p>
+            <h3>{t.tt8} </h3>
+            <p>{t.tt8p}</p>
           </Col>
         </Row>
 
@@ -187,26 +168,26 @@ export default function IndexPage() {
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team5} alt="banner immage" />
             {/* //5 */}
-            <h3>გიორგი ჯაფარიძე </h3>
-            <p>მთავარი ბუღალტერი</p>
+            <h3>{t.tt9} </h3>
+            <p>{t.tt9p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team12} alt="banner immage" />
             {/* //12 */}
-            <h3>ირაკლი ჭრიკაშვილი</h3>
-            <p>მთავარი იურისტი</p>
+            <h3>{t.tt10} </h3>
+            <p>{t.tt10p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team11} alt="banner immage" />
             {/* //11 */}
-            <h3>ირაკლი იობაშვილი</h3>
-            <p>ლოჯისტიკის მენეჯერი</p>
+            <h3>{t.tt11} </h3>
+            <p>{t.tt11p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team15} alt="banner immage" />
             {/* //15 */}
-            <h3>ლევან კანდელაკი </h3>
-            <p>პროექტის მენეჯერი</p>
+            <h3>{t.tt12} </h3>
+            <p>{t.tt12p}</p>
           </Col>
         </Row>
 
@@ -214,34 +195,34 @@ export default function IndexPage() {
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team1} alt="banner immage" />
             {/* //1 */}
-            <h3>ავთო სეფიაშვილი</h3>
-            <p> პროექტის მენეჯერი</p>
+            <h3>{t.tt13} </h3>
+            <p>{t.tt13p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team17} alt="banner immage" />
             {/* //17 */}
-            <h3>მამუკა ბარათაშილი </h3>
-            <p>არქიტექტორი</p>
+            <h3>{t.tt14} </h3>
+            <p>{t.tt14p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team16} alt="banner immage" />
             {/* //16 */}
-            <h3>ლიზა ლაზაშვილი</h3>
-            <p>უმცროსი იურისტი</p>
+            <h3>{t.tt15} </h3>
+            <p>{t.tt15p}</p>
           </Col>
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team14} alt="banner immage" />
             {/* //14 */}
-            <h3>ლაშა ჩიქობავა</h3>
-            <p>მომარაგების მენეჯერი</p>
+            <h3>{t.tt16} </h3>
+            <p>{t.tt16p}</p>
           </Col>
         </Row>
 
         <Row className="sixty-row">
           <Col xs="6" lg="3" md="3" sm="3" xl="3" xxl="3">
             <Image src={Team9} alt="banner immage" />
-            <h3>თორნიკე სიხარულიძე</h3>
-            <p>საწყობის მენეჯერი</p>
+            <h3>{t.tt17} </h3>
+            <p>{t.tt17p}</p>
           </Col>
         </Row>
       </Container>
