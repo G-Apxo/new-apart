@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { Button, Row, Container, Col, input } from "react-bootstrap";
-import en from "../locales/en";
-import fr from "../locales/fr";
+import en from "../locales/enSingleBlog";
+import ru from "../locales/ruSingleBlog";
 import Link from "next/link";
 import BannerImg from "../assets/singleblog.png";
 
@@ -12,7 +12,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "en" ? en : ru;
 
   return (
     <main>

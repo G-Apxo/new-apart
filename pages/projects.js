@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { Button, Row, Container, Col, Carousel } from "react-bootstrap";
-import en from "../locales/en";
-import fr from "../locales/fr";
+import en from "../locales/enProjects";
+import ru from "../locales/ruProjecs";
 import Link from "next/link";
 import Slide1 from "../assets/oldcitypanorama.png";
 import Vector from "../assets/seeprjvector.png";
@@ -13,7 +13,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "en" ? en : ru;
 
   return (
     <main>
@@ -23,7 +23,7 @@ export default function IndexPage() {
           <div className="contact__section">
             <Container className="projects-title-distance">
               <Row>
-                <h3 className="text-center"> Soon</h3>
+                <h3 className="text-center"> {t.title}</h3>
               </Row>
             </Container>
             <div className="parent_only_mobile">
@@ -52,32 +52,26 @@ export default function IndexPage() {
                         <Col xs="12">
                           <Link href="/ProjectsFloor">
                             <div className="mb-5 projects--title cursor">
-                              <p>Done</p>
-                              <h3>
-                                OLD CITY <br /> PANORAMA
-                              </h3>
+                              <p>{t.prj1d}</p>
+                              <h3>{t.prj1t}</h3>
                             </div>
                           </Link>
                         </Col>
                         <Col xs="6">
                           <div className=" projects--texts__basics">
-                            <p className="projects--texts__op">Location</p>
-                            <h3 className="project--location__mod projects--texts__basics">
-                              Tbilisi,georgia
-                              <br />
-                              bukhaidze 6a
-                            </h3>
+                            <p className="projects--texts__op">{t.prj1l}</p>
+                            <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                             <Link href="/ProjectsFloor">
                               <i className="project--see cursor mt-60 ">
-                                View Projects <Image src={Vector} alt="arrow" className="arrow" />
+                                {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
                               </i>
                             </Link>
                           </div>
                         </Col>
                         <Col xs="6">
                           <div>
-                            <p className="projects--texts__op projects--texts__create">Create date</p>
-                            <h3 className="projects--texts__basics projects--texts__done ">2022</h3>
+                            <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
+                            <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
                           </div>
                           <div></div>
                         </Col>
@@ -94,28 +88,22 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/ProjectsFloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>Done</p>
-                          <h3>
-                            OLD CITY <br /> PANORAMA
-                          </h3>
+                          <p>{t.prj2d}</p>
+                          <h3>{t.prj1t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">Location</p>
-                        <h3 className="project--location__mod projects--texts__basics">
-                          Tbilisi,georgia
-                          <br />
-                          bukhaidze 6a
-                        </h3>
+                        <p className="projects--texts__op">{t.prj1l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">Create date</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">2022</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
                       </div>
                       <div>
                         <Link href="/ProjectsFloor">
                           <i className="project--see cursor mt-60">
-                            View Projects <Image src={Vector} />
+                            {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
                       </div>
@@ -150,26 +138,22 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/ProjectsFloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>Done</p>
-                          <h3>Bukhaidze</h3>
+                          <p>{t.prj1d}</p>
+                          <h3>{t.prj2t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">Location</p>
-                        <h3 className="project--location__mod projects--texts__basics">
-                          Tbilisi,georgia
-                          <br />
-                          bukhaidze 6a
-                        </h3>
+                        <p className="projects--texts__op">{t.prj2l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj2lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">Create date</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">2022</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj2c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
                       </div>
                       <div>
                         <Link href="/ProjectsFloor">
                           <i className="project--see cursor mt-60">
-                            View Projects <Image src={Vector} />
+                            {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
                       </div>
@@ -203,26 +187,22 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/ProjectsFloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>Done</p>
-                          <h3>Bukhaidze</h3>
+                          <p>{t.prj2d}</p>
+                          <h3>{t.prj2t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">Location</p>
-                        <h3 className="project--location__mod projects--texts__basics">
-                          Tbilisi,georgia
-                          <br />
-                          bukhaidze 6a
-                        </h3>
+                        <p className="projects--texts__op">{t.prj2l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj2lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">Create date</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">2022</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj2c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
                       </div>
                       <div>
                         <Link href="/ProjectsFloor">
                           <i className="project--see cursor mt-60">
-                            View Projects <Image src={Vector} />
+                            {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
                       </div>
@@ -256,28 +236,22 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/ProjectsFloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>Done</p>
-                          <h3>
-                            OLD CITY <br /> PANORAMA
-                          </h3>
+                          <p>{t.prj2d}</p>
+                          <h3>{t.prj1t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">Location</p>
-                        <h3 className="project--location__mod projects--texts__basics">
-                          Tbilisi,georgia
-                          <br />
-                          bukhaidze 6a
-                        </h3>
+                        <p className="projects--texts__op">{t.prj1l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">Create date</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">2022</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
                       </div>
                       <div>
                         <Link href="/ProjectsFloor">
                           <i className="project--see cursor mt-60">
-                            View Projects <Image src={Vector} />
+                            {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
                       </div>
@@ -311,26 +285,22 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/ProjectsFloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>Done</p>
-                          <h3>Bukhaidze</h3>
+                          <p>{t.prj2d}</p>
+                          <h3>{t.prj2t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">Location</p>
-                        <h3 className="project--location__mod projects--texts__basics">
-                          Tbilisi,georgia
-                          <br />
-                          bukhaidze 6a
-                        </h3>
+                        <p className="projects--texts__op">{t.prj2l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj2lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">Create date</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">2022</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj2c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
                       </div>
                       <div>
                         <Link href="/ProjectsFloor">
                           <i className="project--see cursor mt-60">
-                            View Projects <Image src={Vector} />
+                            {t.viewPrj} <Image src={Vector} />
                           </i>
                         </Link>
                       </div>
