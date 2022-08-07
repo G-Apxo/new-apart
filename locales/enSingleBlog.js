@@ -1,4 +1,5 @@
 export default {
+  goBack: "Go Back",
   date: "November 23. 2021",
   title: "WHY IS THE REAL ESTATE THE SAFEST INVESTMENT?",
   textp1:
