@@ -8,6 +8,7 @@ import ru from "../locales/ruHome";
 import Slide1 from "../assets/slider.png";
 import Taghi from "../assets/taghi.svg";
 import Apart_showroom from "../assets/apartshowroom.svg";
+import Footer from "../components/footer"
 
 import Malongo from "../assets/malongo2.png";
 import Tbc from "../assets/tbc-logo-geo2.svg";
@@ -19,6 +20,7 @@ export default function IndexPage() {
   const t = locale === "en" ? en : ru;
 
   return (
+    <div>
     <main>
       <div className="hero">
         <Nav />
@@ -218,7 +220,10 @@ export default function IndexPage() {
           <hr className="mt-16 mb-8 w-32 border-t-2 border-white" />
           <p className="text-white text-shadow px-8">{t.description}</p>
         </section> */}
+        <Footer/> 
       </div>
     </main>
-  );
+     
+     </div>
+     );
 }
