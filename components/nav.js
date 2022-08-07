@@ -26,7 +26,7 @@ export default function Nav() {
   return (
     <Container>
       <nav class="navbar navbar-expand-lg navbar-light">
-            <a className="navbar-brand">
+            <a className="navbar-brand" href="/">
               <Image src={Logo} alt="Picture of the author" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
