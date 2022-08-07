@@ -1,73 +1,91 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import Logo from "../assets/logo.svg"
-import en from '../locales/enHeader';
-import fr from '../locales/fr';
-import { Container, Form } from 'react-bootstrap';
+import Link from "next/link";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import Logo from "../assets/logo.svg";
+import en from "../locales/enHeader";
+import fr from "../locales/fr";
+import { Container, Form } from "react-bootstrap";
 
-
-
-
-export default function Nav() {
+export default function Nav({ mode, setMode }) {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === 'en' ? en : fr;
+  const t = locale === "en" ? en : fr;
 
-  const changeLanguage = (e) => {
+  const changeLanguage = e => {
     const locale = e.target.value;
     router.push(router.pathname, router.asPath, { locale });
   };
 
   function myFunction() {
     var element = document.body;
+
     element.classList.toggle("dark-mode");
+    element.classlist = "dark-mode" ? setMode(false) : setMode(true);
   }
   return (
     <Container>
       <nav class="navbar navbar-expand-lg navbar-light">
-            <a className="navbar-brand" href="/">
-              <Image src={Logo} alt="Picture of the author" />
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="/About"> {t.about} <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/investing">{t.investing}</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/projects">{t.projects}</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"  href="/Blog">{t.blog}</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link"  href="/Contact">{t.contact}</a>
-                </li>
-                <select
-              onChange={changeLanguage}
-              defaultValue={locale}
-              className="form-select lang__drop"
-            >
-              <option className="text-black" value="en">EN</option>
-              <option className="text-black" value="ru">RU</option>
+        <a className="navbar-brand" href="/">
+          <Image src={Logo} alt="Picture of the author" />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse navbar13" id="navbarNav">
+          <ul className="navbar-nav ul13">
+            <li className="nav-item active">
+              <a className="nav-link" href="/About">
+                {" "}
+                {t.about} <span className="sr-only">(current)</span>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/investing">
+                {t.investing}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/projects">
+                {t.projects}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/Blog">
+                {t.blog}
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/Contact">
+                {t.contact}
+              </a>
+            </li>
+            <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop">
+              <option className="text-black" value="en">
+                EN
+              </option>
+              <option className="text-black" value="ru">
+                RU
+              </option>
+              <option className="text-black" value="ge">
+                GE
+              </option>
             </select>
-                <li>
-                  <Form>
-                  <Form.Check  onClick={myFunction}
-                    type="switch"
-                    id="custom-switch"
-                  />
-                </Form>
-              </li>
-              </ul>
-            </div>
-          </nav>
+            <li>
+              <Form>
+                <Form.Check onClick={myFunction} type="switch" id="custom-switch" />
+              </Form>
+            </li>
+          </ul>
+        </div>
+      </nav>
       {/* <nav className='navbar navbar-expand-lg navbar-light'>
         <ul className="flex navbar-nav">
           <li>
@@ -138,6 +156,5 @@ export default function Nav() {
         </ul>
       </nav> */}
     </Container>
-   
   );
 }
