@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-
+import Logo from "../assets/logo.svg"
 import en from '../locales/enHeader';
 import fr from '../locales/fr';
-
+import { Form } from 'react-bootstrap';
 export default function Nav() {
   const router = useRouter();
   const { locale } = router;
@@ -15,14 +15,20 @@ export default function Nav() {
     router.push(router.pathname, router.asPath, { locale });
   };
 
+  // function Header() {
+  //   function myFunction() {
+  //     var element = document.body;
+  //     element.classList.toggle("dark-mode");
+  //  };
+
   return (
     <nav>
       <ul className="flex items-center justify-between pt-8 px-8 md:px-16">
         <li>
           <Link href="/">
-            <a>
-              <Image src="/logo.png" height={60} width={60} />
-            </a>
+          <a className="navbar-brand">
+            <Image src={Logo} alt="Picture of the author" />
+          </a>
           </Link>
         </li>
         <ul className="flex items-center justify-between space-x-8">
@@ -65,6 +71,14 @@ export default function Nav() {
             >
               {t.contact}
             </a>
+          </li>
+          <li>
+          {/* <Form>
+                <Form.Check  onClick={myFunction}
+                  type="switch"
+                  id="custom-switch"
+                />
+              </Form> */}
           </li>
           <select
             onChange={changeLanguage}
