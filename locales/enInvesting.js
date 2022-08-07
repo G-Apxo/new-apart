@@ -11,4 +11,21 @@ export default {
   consierge: "Consierge",
   hour: "24 Hour Security",
   cleaning: "Cleaning",
+  goal: "What is your goal?",
+  apartForPersonUse: "Apartment for personal use",
+  textAp1:
+    "Given the ecological situation or the chaotic architectural situation in the city, the streets of old Tbilisi can really be considered as a place to live: the most important thing is a quiet environment - which has a positive impact on our mental or physical health. The recreation area, which will be built on the site of the Apart Developmet complex under construction, ensures oxygen quality, while the underground parking space isdesigned according to international standards.",
+  apartForCommercialUse: "Apartment for commercial use",
+  textAp2:
+    "Real estate is considered to be one of the most profitable ways to increase capital. The company Apart Development is located in a tourist active zone, in particular in Old Tbilisi. Our projects meet all criteria, be it a unique location, quiet environment, greenery or special services that will help you as a source of real estate income. The company has special conditions for residents that will make your project even more attractive from a commercial point of view: Benefits can be obtained through both short-term sales and leases. You can rent an apartment to tourists, register on travel platforms, which will make it much easier to find a client, as well as rent for a longer period and reinvest in a property of greater value.",
+  pmAndRs: "Payment method and remote services",
+  pmText:
+    "We have also developed customer-tailored remote services that will simplify and facilitate apartment purchasing decisions for residents abroad. We will assist you in resolving legal issues remotely. We will provide you with an online consultation at a time convenient to you (taking into account the time difference). Remote services also apply to people who are not Georgian citizens. The company also has an interest-free installment plan, the terms of which are as follows: if you buy an apartment with us, you can use the 15-month interest-free installment plan, the down payment is 30% and the rest is distributed at the customer s request.",
+  contactInfo: "Leave us your contact information and our team will reach out to you.",
+  name: "Name",
+  company: "Company",
+  email: "Email",
+  subject: "Subject",
+  textarea: "Text",
+  getContacted: "Get Contacted",
 };

@@ -3,8 +3,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { Button, Row, Container, Col, input, Form } from "react-bootstrap";
-import en from "../locales/en";
-import fr from "../locales/fr";
+import en from "../locales/enProjectFloor";
+import ru from "../locales/ruProjectsFloor";
 import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projects_floor.png";
@@ -13,7 +13,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "en" ? en : ru;
 
   return (
     <main>

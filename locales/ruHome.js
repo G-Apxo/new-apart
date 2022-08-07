@@ -5,4 +5,14 @@ export default {
   ezo: "проект имеет минималистичный дизайн, который сочетается со стилем Старого Тбилиси и делает эту часть столицы еще более привлекательной. Кроме того, комплекс не вляется многоэтажным и в этом отношении органично вписывается в архитектуру старого города. В комплексе можно приобрести квартиру с индивидуальным двором.ул. Бухаидзе, I-ый переулок, 6аМинимальная квадратура апартаментов в Проекте начинается от 45 кв.м, а максимальная – 121 кв.м. Проект включает 4 этажа; паркинг; вид на Мтацминду и Старый Тбилиси.",
   aboutus: "Обновленная жизнь  Старого Тбилиси",
   text: "Для команды «Апарт Девелопменти» важно и приоритетно сохранить очарование старого города, использовать в современном строительстве старые архитектурные фрагменты, и в то же время, с учетом современных технологий,  дать забытым районам новую жизнь.Наши готовые, текущие и будущие проекты локализованы в Старом Тбилиси. Имено там, где открывается уникальный, панорамный вид на весь город от Нарикала до озера Лиси. ",
+
+  slider1: "For our team, it is important and a priority to preserve ",
+  slider2: "the charm of the old city, to use the old ",
+  slider3: "For our team, it is important and a priority to preserve  ",
+  slider4: " the charm of the old city, to use the old ",
+  aabout: "About Us",
+  aheader: "RENEWED LIFE OF OLD TBILISI",
+  ap: "For our team, it is important and a priority to preserve the charm of the old city, to use the old architectural fragments in the modern construction, and at the same time to bring new life to the forgotten neighborhoods.",
+
+  partners: "Partners",
 };
