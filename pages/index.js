@@ -23,17 +23,15 @@ export default function IndexPage() {
     <div>
     <main>
       <div className="hero">
+        <div className="main_banner">
         <Nav />
         <Container>
           <Row>
-            <Col lg="6" md="6" sm="6" xl="6" xxl="6">
-              <Image src={Slide1} />
-            </Col>
             <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
               <Col className="d-flex align-items-center">
                 <div className="test">
                   <Image src={Taghi} alt="banner immage" className="Taghi" />
-                  <p>
+                  <p className="text-white">
                     {t.slider1}
                     <br />
                     {t.slider2}
@@ -48,6 +46,7 @@ export default function IndexPage() {
             </Col>
           </Row>
         </Container>
+        </div>
         <Container className="container-marginer additional__padding">
           <Row className="justify-content-between">
             <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">

@@ -28,24 +28,24 @@ function Footer() {
             </Col>
             <Col md={2}>
               <p className="infos--white">
-                <a>+995 544 44 44 31</a>
+                <a>{t.num}</a>
               </p>
               <p className="infos--white">
-                <a>info@apart.ge</a>
+                <a>{t.info}</a>
               </p>
             </Col>
             <Col md={2}>
               <div className="box">
-                <p className="social">Facebook</p>
-                <p className="social">Instagram</p>
-                <p className="social">Youtube</p>
-                <p className="social">Pinterest</p>
+                <p className="social">{t.fb}</p>
+                <p className="social">{t.ig}</p>
+                <p className="social">{t.yt}</p>
+                <p className="social">{t.p}</p>
               </div>
             </Col>
 
             <Col md={4}>
-              <p className="languages">geo /eng / rus</p>
-              <p className="languages">Terms and Conditions</p>
+              <p className="languages">{t.ge} /{t.en} / {t.ru}</p>
+              <p className="languages">{t.terms}</p>
             </Col>
           </Row>
         </Container>
