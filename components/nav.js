@@ -86,7 +86,7 @@ export default function Nav() {
             className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
           >
             <option className="text-black" value="en">EN</option>
-            <option className="text-black" value="fr">FR</option>
+            <option className="text-black" value="ru">RU</option>
           </select>
         </ul>
       </ul>
