@@ -6,7 +6,7 @@ import en from "../locales/enHeader";
 import fr from "../locales/fr";
 import { Container, Form } from "react-bootstrap";
 
-export default function Nav({ mode, setMode }) {
+export default function navwhite({ mode, setMode }) {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : fr;

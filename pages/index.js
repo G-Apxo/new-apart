@@ -1,4 +1,4 @@
-import Nav from "../components/nav";
+import Navwhite from "../components/navwhite";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -24,7 +24,7 @@ export default function IndexPage() {
     <div>
       <main>
         <div className="hero">
-          <Nav mode={mode} setMode={setMode} />
+          <Navwhite mode={mode} setMode={setMode} />
           <Container>
             <Row>
               <Col lg="6" md="6" sm="6" xl="6" xxl="6">
