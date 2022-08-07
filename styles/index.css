@@ -1471,3 +1471,12 @@ flickity-enabled {
   white-space: nowrap;
   /* margin: 0 10px; */
 }
+.banner_img{
+  
+}
+.nav__container{
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}

@@ -9,7 +9,7 @@ import Slide1 from "../assets/slider.png";
 import Taghi from "../assets/taghi.svg";
 import Apart_showroom from "../assets/apartshowroom.svg";
 import Footer from "../components/footer";
-
+import Carousel from 'react-bootstrap/Carousel';
 import Malongo from "../assets/malongo2.png";
 import Tbc from "../assets/tbc-logo-geo2.svg";
 
@@ -23,14 +23,15 @@ export default function IndexPage() {
   return (
     <div>
       <main>
-        <div className="hero">
           <Navwhite mode={mode} setMode={setMode} />
-          <Container>
-            <Row>
-              <Col lg="6" md="6" sm="6" xl="6" xxl="6">
-                <Image src={Slide1} />
-              </Col>
-              <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
+          <Carousel style={{ opacity: 1 }}>
+            <Carousel.Item className="fuul__width">
+            <div className="video">
+                <video autoplay="" loop="true" muted="">
+                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
                 <Col className="d-flex align-items-center">
                   <div className="test">
                     <Image src={Taghi} alt="banner immage" className="Taghi" />
@@ -47,6 +48,29 @@ export default function IndexPage() {
                   </div>
                 </Col>
               </Col>
+            </Carousel.Item>
+            <Carousel.Item className="fuul__width">
+              <Row>
+              <div class="video">
+                <video autoplay="" loop="true" muted="">
+                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+                </video>
+            </div>
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item className="fuul__width">
+              <Row>
+              <div class="video">
+                <video autoplay="" loop="true" muted="">
+                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+                </video>
+            </div>
+              </Row>
+            </Carousel.Item>
+          </Carousel>
+          <Container>
+            <Row>
+             
             </Row>
           </Container>
           <Container className="container-marginer additional__padding">
@@ -222,7 +246,7 @@ export default function IndexPage() {
           <p className="text-white text-shadow px-8">{t.description}</p>
         </section> */}
           <Footer />
-        </div>
+        
       </main>
     </div>
   );

@@ -23,12 +23,13 @@ export default function navwhite({ mode, setMode }) {
     element.classlist = "dark-mode" ? setMode(false) : setMode(true);
   }
   return (
+    <div className="nav__container">
     <Container>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <a className="navbar-brand" href="/">
           <Image src={Logo} alt="Picture of the author" />
         </a>
-        <button
+        <button 
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -42,39 +43,39 @@ export default function navwhite({ mode, setMode }) {
         <div className="collapse navbar-collapse navbar13" id="navbarNav">
           <ul className="navbar-nav ul13">
             <li className="nav-item active">
-              <a className="nav-link" href="/About">
+              <a className="nav-link text-white" href="/About">
                 {" "}
                 {t.about} <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Investing">
+              <a className="nav-link text-white" href="/Investing">
                 {t.investing}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">
+              <a className="nav-link text-white" href="/projects">
                 {t.projects}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Blog">
+              <a className="nav-link text-white" href="/Blog">
                 {t.blog}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Contact">
+              <a className="nav-link text-white" href="/Contact">
                 {t.contact}
               </a>
             </li>
             <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop">
-              <option className="text-black" value="en">
+              <option className="text-white" value="en">
                 EN
               </option>
-              <option className="text-black" value="ru">
+              <option className="text-white" value="ru">
                 RU
               </option>
-              <option className="text-black" value="ge">
+              <option className="text-white" value="ge">
                 GE
               </option>
             </select>
@@ -156,5 +157,6 @@ export default function navwhite({ mode, setMode }) {
         </ul>
       </nav> */}
     </Container>
+    </div>
   );
 }
