@@ -16,7 +16,6 @@ function Footer() {
     };
 
   return (
-    <div className="footer-outside-white mt-60">
       <div className="footer-inside-white footer-inside-black mt-60">
         <Container>
           <Row>
@@ -42,7 +41,6 @@ function Footer() {
                 <p className="social">{t.p}</p>
               </div>
             </Col>
-
             <Col md={4}>
               <p className="languages">{t.ge} /{t.en} / {t.ru}</p>
               <p className="languages">{t.terms}</p>
@@ -50,7 +48,7 @@ function Footer() {
           </Row>
         </Container>
       </div>
-    </div>
+
   );
 }
 export default Footer;

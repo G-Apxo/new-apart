@@ -8,6 +8,7 @@ import ru from "../locales/ruProjecs";
 import Link from "next/link";
 import Slide1 from "../assets/oldcitypanorama.png";
 import Vector from "../assets/seeprjvector.png";
+import Footer from "../components/footer";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -330,6 +331,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }

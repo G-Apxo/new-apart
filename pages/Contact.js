@@ -6,6 +6,7 @@ import { Button, Row, Container, Col, input,Form } from "react-bootstrap";
 import en from '../locales/en';
 import fr from '../locales/fr';
 import Link from "next/link";
+import Footer from '../components/footer';
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -139,6 +140,7 @@ export default function IndexPage() {
       </div>
         </div>
     </div>
+    <Footer/>
     </main>
   );
 }

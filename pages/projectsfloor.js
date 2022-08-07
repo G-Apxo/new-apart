@@ -8,6 +8,7 @@ import ru from "../locales/ruProjectsFloor";
 import Link from "next/link";
 import Taghi from "../assets/Taghi_old_tbilisi.svg";
 import Bukhaidze from "../assets/projects_floor.png";
+import Footer from "../components/footer";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -167,6 +168,7 @@ export default function IndexPage() {
           </Col>
         </Container>
       </div>
+      <Footer/>
     </main>
   );
 }

@@ -7,6 +7,7 @@ import en from "../locales/enSingleBlog";
 import ru from "../locales/ruSingleBlog";
 import Link from "next/link";
 import BannerImg from "../assets/singleblog.png";
+import Footer from "../components/footer";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -94,6 +95,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }

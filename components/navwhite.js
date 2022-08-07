@@ -68,7 +68,10 @@ export default function navwhite({ mode, setMode }) {
                 {t.contact}
               </a>
             </li>
-            <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop">
+          </ul>
+          <ul className="navbar-nav ul13">
+          <li className="nav-item">
+            <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop_white">
               <option className="text-white" value="en">
                 EN
               </option>
@@ -79,9 +82,10 @@ export default function navwhite({ mode, setMode }) {
                 GE
               </option>
             </select>
-            <li>
+            </li>
+            <li className="nav-item">
               <Form>
-                <Form.Check onClick={myFunction} type="switch" id="custom-switch" />
+                <Form.Check onClick={myFunction} type="switch" id="custom-switch" className="white__switcher" />
               </Form>
             </li>
           </ul>

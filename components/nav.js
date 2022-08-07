@@ -67,20 +67,24 @@ export default function Nav({ mode, setMode }) {
                 {t.contact}
               </a>
             </li>
-            <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop">
-              <option className="text-black" value="en">
+          </ul>
+          <ul className="navbar-nav ul13">
+          <li className="nav-item">
+            <select onChange={changeLanguage} defaultValue={locale} className="form-select ">
+              <option className="text-white" value="en">
                 EN
               </option>
-              <option className="text-black" value="ru">
+              <option className="text-white" value="ru">
                 RU
               </option>
-              <option className="text-black" value="ge">
+              <option className="text-white" value="ge">
                 GE
               </option>
             </select>
-            <li>
+            </li>
+            <li className="nav-item">
               <Form>
-                <Form.Check onClick={myFunction} type="switch" id="custom-switch" />
+                <Form.Check onClick={myFunction} type="switch" id="custom-switch"/>
               </Form>
             </li>
           </ul>

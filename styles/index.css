@@ -1454,10 +1454,12 @@ flickity-enabled {
 .form-text-area {
   border: 0.5px solid #00000064 !important;
 }
-.lang__drop {
+.lang__drop_white {
   padding: 0 !important;
   margin: 0 !important;
   border: none !important;
+  background-color: transparent !important;
+  color: white;
 }
 .navbar13 {
   flex-basis: none;
@@ -1475,8 +1477,11 @@ flickity-enabled {
   
 }
 .nav__container{
-  background-color: white;
+  background-color: transparent;
   width: 100%;
-  position: fixed;
+  position: absolute;
   z-index: 99;
+}
+.white__switcher{
+  background-color: transparent !important;
 }
