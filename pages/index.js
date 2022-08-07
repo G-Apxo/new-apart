@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { Row, Col,Container,Form,Button } from "react-bootstrap";
-import en from '../locales/en';
-import fr from '../locales/fr';
+import en from '../locales/enHome';
+import fr from '../locales/ruHome';
 import Slide1 from "../assets/slider.png";
 import Taghi from "../assets/taghi.svg"
 import Apart_showroom from "../assets/apartshowroom.svg";
@@ -33,12 +33,13 @@ export default function IndexPage() {
                       <div className="test">
                         <Image src={Taghi} alt="banner immage" className="Taghi" />
                         <p>
-                          For our team, it is important and a priority to preserve <br />
-                          the charm of the old city, to use the old
+                          {t.slider1}
+                          <br/>
+                          {t.slider2}
                           <br />
                           <br />
-                          For our team, it is important and a priority to preserve <br /> the charm of the old
-                          city, to use the old
+                          {t.slider3}<br /> 
+                          {t.slider4}
                         </p>
                       </div>
                     </Col>
@@ -50,19 +51,17 @@ export default function IndexPage() {
           <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
             <Row>
               <Col xs="12" lg="3" md="3" sm="3" xl="3" xxl="3">
-                <p className="home--section__texts">About us</p>
+                <p className="home--section__texts">{t.aabout}</p>
               </Col>
               <Col></Col>
               <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8">
                 <h1 className="section1-title">
-                  RENEWED LIFE
+                  {t.aheader}
                   <br /> OF OLD TBILISI
                 </h1>
 
                 <p className="section1-subtitle">
-                  For our team, it is important and a priority to preserve the charm of the old city, to use the
-                  old architectural fragments in the modern construction, and at the same time to bring new life
-                  to the forgotten neighborhoods.
+                  {t.ap}
                 </p>
               </Col>
           </Row>
@@ -153,7 +152,7 @@ export default function IndexPage() {
       <Row className="justify-content-between align-items-center ">
         <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
           <div className="partners home--section__texts">
-            <p className="home--section__texts">Partners</p>
+            <p className="home--section__texts">{t.partners}</p>
           </div>
         </Col>
         <Col xs="12" lg="10" md="10" sm="10" xl="10" xxl="10">
@@ -216,28 +215,7 @@ export default function IndexPage() {
           <p className="text-white text-shadow px-8">{t.description}</p>
         </section> */}
       </div>
-      {/* <article className="mt-16 px-8 max-w-4xl m-auto">
-        <p className="mb-8">{t.p1}</p>
-        <Image
-          alt="Screenshot"
-          src="/screenshot.png"
-          width={1440}
-          height={870}
-        />
-        <p className="my-8">{t.p2}</p>
-        <p className="mb-16">{t.p3}</p>
-      </article> */}
-      {showBanner && (
-        <div className="flex flex-col items-center pt-4 bg-gray-800 text-white fixed bottom-0 w-full bg-opacity-80 p-4 text-center">
-          <p>{t.cookies}</p>
-          <button
-            onClick={() => setBanner(false)}
-            className="px-4 py-2 w-40 border-2 border-white bg-gray-600 hover:bg-gray-800 transition rounded mt-4"
-          >
-            {t.button}
-          </button>
-        </div>
-      )}
+
     </main>
   );
 }

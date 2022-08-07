@@ -17,10 +17,14 @@
     "sass": "^1.54.3",
     "tailwindcss": "^2.2.19"
   },
+<<<<<<< HEAD
   "devDependencies": {
     "autoprefixer": "10.0.2",
     "postcss": "^8.4.14",
     "tailwindcss": "^2.0.1"
   },
+=======
+
+>>>>>>> main
   "license": "MIT"
 }
