@@ -57,6 +57,9 @@ export default function IndexPage() {
             </Container>
             <Container>
               <Row className="investing-goal mb-80">
+                <h3>{t.bonus}</h3>
+              </Row>
+              <Row className="investing-goal mb-80">
                 <h3>{t.goal}</h3>
               </Row>
               <Row>
@@ -77,74 +80,103 @@ export default function IndexPage() {
                   <h3>{t.pmAndRs}</h3>
                   <p className="investing-title_subtext">{t.pmText}</p>
                 </Col>
-                <Col xxl="6">
-                  <Form>
-                    <Row className="mt-5">
-                      <p>{t.contactInfo}</p>
-                      <Col xs="6">
-                        <div className="md-form mb-0">
-                          <Form.Control
-                            type="text"
-                            id="name"
-                            name="name"
-                            className="form-control input__main"
-                            placeholder={t.name}
-                          />
-                        </div>
+                <Col xxl="1"></Col>
+                <Col xs="12" lg="5" md="5" sm="5" xl="5" xxl="5">
+                  <Col xs="12" className="col-5 padding-0">
+                    <p className="section1-form-text">
+                      Leave us your contact information and our team will reach out to you.
+                    </p>
+                    <h4 className="section-1-form-subtext">Apartment type:</h4>
+                    <Row>
+                      <Col xs="3">
+                        <Form>
+                          {["checkbox"].map(type => (
+                            <div key={`inline-${type}`} className="">
+                              <Form.Check
+                                inline
+                                label="Studio"
+                                name="group1"
+                                type={type}
+                                id={`inline-${type}-1`}
+                              />
+                            </div>
+                          ))}
+                        </Form>
                       </Col>
-                      <Col xs="6">
-                        <div className="md-form mb-0">
-                          <Form.Control
-                            type="text"
-                            id="company"
-                            name="company"
-                            className="form-control input__main"
-                            placeholder={t.company}
-                          />
-                        </div>
+                      <Col xs="3">
+                        <Form>
+                          {["checkbox"].map(type => (
+                            <div key={`inline-${type}`} className=" home--inputs">
+                              <Form.Check
+                                inline
+                                label="1 Bedroom"
+                                name="group1"
+                                type={type}
+                                id={`inline-${type}-2`}
+                              />
+                            </div>
+                          ))}
+                        </Form>
                       </Col>
-                      <Col xs="6">
-                        <div className="md-form mb-0">
-                          <Form.Control
-                            type="mail"
-                            id="email"
-                            name="email"
-                            className="form-control input__main"
-                            placeholder={t.email}
-                          />
-                        </div>
+                      <Col xs="6" className="col-6">
+                        <Form>
+                          {["checkbox"].map(type => (
+                            <div key={`inline-${type}`} className=" home--inputs">
+                              <Form.Check
+                                inline
+                                label="2+ Bedrooms"
+                                name="group1"
+                                type={type}
+                                id={`inline-${type}-3`}
+                              />
+                            </div>
+                          ))}
+                        </Form>
                       </Col>
-                      <Col xs="6">
-                        <div className="md-form mb-0">
-                          <Form.Control
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            className="form-control input__main"
-                            placeholder={t.subject}
-                          />
+                      <Col className="mb-60">
+                        <div xs="12" className="mb-md-0 mb-5 home--inputs">
+                          <Form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                            <Col xs="12">
+                              <div className="md-form mb-0">
+                                <Form.Control
+                                  type="text"
+                                  id="name"
+                                  name="name"
+                                  className="form-control input__main"
+                                  placeholder="Name"
+                                />
+                              </div>
+                            </Col>
+                            <Col xs="12">
+                              <div className="md-form mb-0">
+                                <Form.Control
+                                  type="text"
+                                  id="email"
+                                  name="email"
+                                  className="form-control input__main"
+                                  placeholder="Email"
+                                />
+                              </div>
+                            </Col>
+                            <Col xs="12">
+                              <div className="md-form mb-0">
+                                <Form.Control
+                                  type="text"
+                                  id="email"
+                                  name="email"
+                                  className="form-control input__main"
+                                  placeholder="Phone Number"
+                                />
+                              </div>
+                            </Col>
+                          </Form>
+                          <div className="text-center text-md-left home--get-contacted">
+                            <Button className="btn-send">Get contacted</Button>
+                          </div>
                         </div>
-                      </Col>
-                      <Col xs="12">
-                        <div className="md-form mb-0">
-                          <Form.Control
-                            as="textarea"
-                            type="text"
-                            id="text"
-                            className="form-text-area"
-                            name="text"
-                            // className="form-control input__main"
-                            placeholder={t.textarea}
-                            cols={39}
-                            rows={3}
-                          />
-                        </div>
-                      </Col>
-                      <Col xs="12">
-                        <Button className="btn-send">{t.getContacted}</Button>
                       </Col>
                     </Row>
-                  </Form>
+                  </Col>
                 </Col>
               </Row>
             </Container>

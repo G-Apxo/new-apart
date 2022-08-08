@@ -395,9 +395,12 @@ a {
 .section1-form-text {
   font-size: 14px;
   opacity: 0.6;
+  margin-bottom: 0;
 }
 .section-1-form-subtext {
   font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* .partners {
   display: flex;
@@ -564,7 +567,7 @@ a.nav-link {
   /* max-width: 70%; */
 }
 .form-check {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .form-check-label {
   font-size: 16px;
@@ -1471,3 +1474,17 @@ flickity-enabled {
   white-space: nowrap;
   /* margin: 0 10px; */
 }
+.test13 {
+  display: flex;
+}
+.test14 {
+  display: flex;
+  flex-direction: row;
+}
+.test15 {
+  margin-bottom: 30px;
+}
+/* .home--inputs {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+} */

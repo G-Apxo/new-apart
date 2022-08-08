@@ -11,6 +11,7 @@ export default {
   consierge: "Consierge",
   hour: "24 Hour Security",
   cleaning: "Cleaning",
+  bonus: "Apart showroom service, we offer the repair services and discounts.",
   goal: "What is your goal?",
   apartForPersonUse: "Apartment for personal use",
   textAp1:

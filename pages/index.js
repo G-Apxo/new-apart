@@ -58,10 +58,7 @@ export default function IndexPage() {
                   </Col>
                   <Col></Col>
                   <Col xs="12" lg="8" md="8" sm="8" xl="8" xxl="8">
-                    <h1 className="section1-title">
-                      {t.aheader}
-                      <br /> OF OLD TBILISI
-                    </h1>
+                    <h1 className="section1-title">{t.aheader}</h1>
 
                     <p className="section1-subtitle">{t.ap}</p>
                   </Col>
@@ -144,6 +141,17 @@ export default function IndexPage() {
                               />
                             </div>
                           </Col>
+                          <Col xs="12">
+                            <div className="md-form mb-0">
+                              <Form.Control
+                                type="text"
+                                id="email"
+                                name="email"
+                                className="form-control input__main"
+                                placeholder="Phone Number"
+                              />
+                            </div>
+                          </Col>
                         </Form>
                         <div className="text-center text-md-left home--get-contacted">
                           <Button className="btn-send">Get contacted</Button>
@@ -191,7 +199,7 @@ export default function IndexPage() {
           <Container className="mb-60 mt-60">
             <Row>
               <Col xs="12" lg="2" md="2" sm="2" xl="2" xxl="2">
-                <p className="home--section__texts">Projects Map</p>
+                <p className="home--section__texts">{t.pm}</p>
               </Col>
               <Col xs="12" lg="10" md="10" sm="10" xl="10" xxl="10">
                 <iframe

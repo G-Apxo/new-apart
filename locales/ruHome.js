@@ -10,9 +10,10 @@ export default {
   slider2: "the charm of the old city, to use the old ",
   slider3: "For our team, it is important and a priority to preserve  ",
   slider4: " the charm of the old city, to use the old ",
-  aabout: "About Us",
-  aheader: "RENEWED LIFE OF OLD TBILISI",
-  ap: "For our team, it is important and a priority to preserve the charm of the old city, to use the old architectural fragments in the modern construction, and at the same time to bring new life to the forgotten neighborhoods.",
+  aabout: "О Нас",
+  aheader: "ОБНОВЛЕННАЯ ЖИЗНЬ СТАРОГО ТБИЛИСИ",
+  ap: "Для команды «Апарт Девелопмент» важно и приоритетно сохранить очарование старого города, использовать в современном строительстве старые архитектурные фрагменты, и в то же время, с учетом современных технологий,  дать забытым районам новую жизнь. Наши готовые, текущие и будущие проекты локализованы в Старом Тбилиси. Имено там, где открывается уникальный, панорамный вид на весь город от Нарикала до озера Лиси. ",
 
-  partners: "Partners",
+  partners: "Партнеры",
+  pm: "Карта Проектов",
 };
