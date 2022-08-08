@@ -155,7 +155,16 @@ export default function IndexPage() {
               </Col>
             </Col>
             <Col xs="6">
-              <div className="Calculator"></div>
+              <div className="Calculator">
+              <iframe
+                    allowFullScreen
+                    width="640"
+                    height="480"
+                    loading="lazy"
+                    frameBorder="0"
+                    src="https://resilient-ganache-549f6c.netlify.app/frame/"
+                  ></iframe>
+              </div>
             </Col>
           </Row>
           <Col xs="12" className="mt-120">
