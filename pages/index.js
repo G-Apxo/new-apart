@@ -26,16 +26,12 @@ export default function IndexPage() {
           <Navwhite mode={mode} setMode={setMode} />
           <Carousel style={{ opacity: 1 }}>
             <Carousel.Item className="fuul__width">
-            <div className="video">
-                <video autoplay="" loop="true" muted="">
-                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
-                </video>
-            </div>
+            <div>
             <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
                 <Col className="d-flex align-items-center">
                   <div className="test">
                     <Image src={Taghi} alt="banner immage" className="Taghi" />
-                    <p>
+                    <p className="text-white">
                       {t.slider1}
                       <br />
                       {t.slider2}
@@ -48,11 +44,15 @@ export default function IndexPage() {
                   </div>
                 </Col>
               </Col>
+                <video autoPlay="" loop={true} muted=""  className="video">
+                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+                </video>
+            </div>
             </Carousel.Item>
-            <Carousel.Item className="fuul__width">
+            {/* <Carousel.Item className="fuul__width">
               <Row>
-              <div class="video">
-                <video autoplay="" loop="true" muted="">
+              <div>
+                <video autoPlay="" loop={true} muted="" className="video">
                     <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -60,14 +60,14 @@ export default function IndexPage() {
             </Carousel.Item>
             <Carousel.Item className="fuul__width">
               <Row>
-              <div class="video">
-                <video autoplay="" loop="true" muted="">
+              <div>
+                <video autoPlay="" loop={true} muted=""  className="video">
                     <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
                 </video>
             </div>
               </Row>
-            </Carousel.Item>
-          </Carousel>
+            </Carousel.Item>*/}
+          </Carousel> 
           <Container>
             <Row>
              
@@ -193,11 +193,6 @@ export default function IndexPage() {
                       <Image src={Apart_showroom} alt="banner immage" className="partners_wite" />
                     </div>
                   </div>
-                  {/* <div className="col-2">
-          <div className="partners">
-            <Image src={Greenlife} alt="banner immage" className="partners_wite" />
-          </div>
-        </div> */}
                   <div className="col-3">
                     <div className="partners">
                       <Image src={Malongo} alt="banner immage" className="partners_wite" />
@@ -227,24 +222,6 @@ export default function IndexPage() {
               </Col>
             </Row>
           </Container>
-          {/* <section className="pt-8 pb-20 flex flex-col items-center">
-          <nav aria-label="breadcrumb">
-            <ol className="flex space-x-2 text-white text-sm mb-8 text-shadow">
-              <li>
-                <a href="#">{'Science >'}</a>
-              </li>
-              <li>
-                <a href="#">{'Computing >'}</a>
-              </li>
-              <li>Birth web</li>
-            </ol>
-          </nav>
-          <h1 className="text-5xl text-white text-shadow font-bold px-8 text-center">
-            {t.hero}
-          </h1>
-          <hr className="mt-16 mb-8 w-32 border-t-2 border-white" />
-          <p className="text-white text-shadow px-8">{t.description}</p>
-        </section> */}
           <Footer />
         
       </main>
