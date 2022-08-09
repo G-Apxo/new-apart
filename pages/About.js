@@ -84,7 +84,7 @@ export default function IndexPage() {
                   sm="12"
                   xl="12"
                   xxl="3"
-                  // className="mt-60 "
+                // className="mt-60 "
                 >
                   <h3 className="about--text__hmod">{t.ath2}</h3>
                 </Col>
@@ -100,7 +100,7 @@ export default function IndexPage() {
                   sm="12"
                   xl="12"
                   xxl="3"
-                  // className="mt-60 "
+                // className="mt-60 "
                 >
                   <h3 className="about--text__hmod">{t.ath3}</h3>
                 </Col>
@@ -246,8 +246,8 @@ export default function IndexPage() {
           </Row>
         </Container>
       </div>
-       <Footer />
-</div>
-   
+      <Footer />
+    </div>
+
   );
 }

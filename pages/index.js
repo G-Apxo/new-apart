@@ -29,12 +29,12 @@ export default function IndexPage() {
           <Navwhite mode={mode} setMode={setMode} />
           <Carousel style={{ opacity: 1 }} className="carousle__inner">
             <Carousel.Item className="fuul__width">
-            <div >
-                <video  autoPlay="" loop={true} muted="" className="video">
-                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+              <div >
+                <video autoPlay="" loop={true} muted="" className="video">
+                  <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
                 </video>
-            </div>
-            <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
+              </div>
+              <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
                 <Col className="d-flex align-items-center">
                   <div className="test">
                     <Image src={Taghi} alt="banner immage" className="Taghi" />
@@ -43,18 +43,18 @@ export default function IndexPage() {
               </Col>
             </Carousel.Item>
             <Carousel.Item className="fuul__width">
-            <div>
-            <video  autoPlay="" loop={true} muted="" className="video">
-                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+              <div>
+                <video autoPlay="" loop={true} muted="" className="video">
+                  <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
                 </video>
-            </div>
+              </div>
             </Carousel.Item>
           </Carousel>
           <Container>
             <Row>
-    
-          </Row>
-              <Row>
+
+            </Row>
+            <Row>
               <Col lg="6" md="6" sm="6" xl="6" xxl="6">
                 <Image src={Slide1} />
               </Col>
@@ -234,7 +234,7 @@ export default function IndexPage() {
                   src="https://snazzymaps.com/embed/408105"
                   width="100%"
                   height="600px"
-                  // style="border:none;"
+                // style="border:none;"
                 ></iframe>
               </Col>
             </Row>

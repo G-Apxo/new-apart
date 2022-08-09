@@ -97,11 +97,23 @@ export default function IndexPage() {
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="3">
                 <label htmlFor="name"></label>
-                <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
+                <input
+                  className="btn-test"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder={t.name}
+                />
               </Col>
               <Col xs="3">
                 <label htmlFor="email"></label>
-                <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
+                <input
+                  className="btn-test"
+                  type="mail"
+                  id="email"
+                  name="email"
+                  placeholder={t.email}
+                />
               </Col>
               <Col xs="3">
                 <label htmlFor="tel"></label>
@@ -142,72 +154,81 @@ export default function IndexPage() {
               defaultValue="0"
               ref={calcInputVal3}
             />
-            <input type="text" className="calculator" placeholder={calc} value={calculated} />
+            <input
+              type="text"
+              className="calculator"
+              placeholder={calc}
+              value={calculated}
+            />
           </Col>
           <Row className="justify-content-between">
-
-              <Col xs="5">
-                <h3>{t.aboutprj}</h3>
-                <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
-                <Col xs="12">
-                  <Row>
-                    <h3>{t.adv}</h3>
-                    <h5 className="projects-floor-first-one">{t.first}</h5>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <h5 className="projects-floor-first-one">{t.first}</h5>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <h5 className="projects-floor-first-one">{t.first}</h5>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                  </Row>
-                </Col>
+            <Col xs="5">
+              <h3>{t.aboutprj}</h3>
+              <p className="projects--floor-about-text basic-texts-14">
+                {t.apt}
+              </p>
+              <Col xs="12">
+                <Row>
+                  <h3>{t.adv}</h3>
+                  <h5 className="projects-floor-first-one">{t.first}</h5>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                </Row>
+                <Row>
+                  <h5 className="projects-floor-first-one">{t.first}</h5>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                </Row>
+                <Row>
+                  <h5 className="projects-floor-first-one">{t.first}</h5>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                </Row>
               </Col>
-              <Col xs="6" className="d-flex justify-content-center align-items-center">
-                <div className="">
-                  <iframe
-                    allowFullScreen
-                    width="640"
-                    height="480"
-                    loading="lazy"
-                    frameBorder="0"
-                    src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
-                  ></iframe>
-                </div>
-                </Col>
+            </Col>
+            <Col
+              xs="6"
+              className="d-flex justify-content-center align-items-center"
+            >
+              <div className="">
+                <iframe
+                  allowFullScreen
+                  width="640"
+                  height="480"
+                  loading="lazy"
+                  frameBorder="0"
+                  src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
+                ></iframe>
+              </div>
+            </Col>
           </Row>
           <Col xs="12" className="mt-120">
             <iframe
               src="https://snazzymaps.com/embed/408105"
               width="100%"
               height="600px"
-              // style="border:none;"
+            // style="border:none;"
             ></iframe>
           </Col>
         </Container>

@@ -91,37 +91,8 @@ export default function IndexPage() {
             </Row>
           </Container>
         </div>
-
-        {/* <section className="pt-8 pb-20 flex flex-col items-center">
-          <nav aria-label="breadcrumb">
-            <ol className="flex space-x-2 text-white text-sm mb-8 text-shadow">
-              <li>
-                <a href="#">{'Science >'}</a>
-              </li>
-              <li>
-                <a href="#">{'Computing >'}</a>
-              </li>
-              <li>Birth web</li>
-            </ol>
-          </nav>
-          <h1 className="text-5xl text-white text-shadow font-bold px-8 text-center">
-            {t.hero}
-          </h1>
-          <hr className="mt-16 mb-8 w-32 border-t-2 border-white" />
-          <p className="text-white text-shadow px-8">{t.description}</p>
-        </section> */}
       </div>
-      {/* <article className="mt-16 px-8 max-w-4xl m-auto">
-        <p className="mb-8">{t.p1}</p>
-        <Image
-          alt="Screenshot"
-          src="/screenshot.png"
-          width={1440}
-          height={870}
-        />
-        <p className="my-8">{t.p2}</p>
-        <p className="mb-16">{t.p3}</p>
-      </article> */}
+     
       <Footer />
     </div>
   );

@@ -96,7 +96,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
