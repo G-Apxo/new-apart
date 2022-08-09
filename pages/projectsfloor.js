@@ -200,6 +200,7 @@ export default function IndexPage() {
                     src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
                   ></iframe>
                 </div>
+                </Col>
             <Col xs="5">
               <h3>{t.aboutprj}</h3>
               <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
