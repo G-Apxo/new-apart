@@ -1481,6 +1481,7 @@ flickity-enabled {
   display: flex;
   flex-direction: row;
 }
+<<<<<<< HEAD
 .test15 {
   margin-bottom: 30px;
 }
@@ -1488,3 +1489,8 @@ flickity-enabled {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 } */
+=======
+.white__switcher{
+  background-color: transparent !important;
+}
+>>>>>>> parent of 5fbd053 (make banner stick to full width)
