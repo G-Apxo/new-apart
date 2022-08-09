@@ -201,61 +201,6 @@ export default function IndexPage() {
                   ></iframe>
                 </div>
                 </Col>
-            <Col xs="5">
-              <h3>{t.aboutprj}</h3>
-              <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
-              <Col xs="12">
-                <Row>
-                  <h3>{t.adv}</h3>
-                  <h5 className="projects-floor-first-one">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-                <Row>
-                  <h5 className="projects-floor-first-one">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-                <Row>
-                  <h5 className="projects-floor-first-one">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-              </Col>
-            </Col>
-            <Col xs="6" className="d-flex justify-content-center align-items-center">
-              <div className="">
-                <iframe
-                  allowFullScreen
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  frameBorder="0"
-                  src="https://jovial-eclair-7745d5.netlify.app/frame/"
-                ></iframe>
-              </div>
-            </Col>
           </Row>
           <Col xs="12" className="mt-120">
             <iframe
