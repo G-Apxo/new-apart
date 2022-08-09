@@ -110,34 +110,7 @@ export default function IndexPage() {
               </Col>
             </Row>
           </form>
-          <Col xs="12 mt-5 mb-5">
-              <div className="Calculator">
-              <form action="/send-data-here" method="post">
-            <Row className=" mt-5 form-row align-items-center">
-              <Col xs="6">
-                <label htmlFor="name"></label>
-                <input  className="form-control" type="text" id="name" name="name" placeholder="price" />
-              </Col>
-              <Col xs="6">
-                <label htmlFor="email"></label>
-                <input className="form-control" type="mail" id="email" name="email" placeholder="amount" />
-              </Col>
-              <Col xs="12">
-                <label htmlFor="tel"></label>
-                <input
-                  className="form-control"
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="test teqst"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  required
-                />
-              </Col>
-            </Row>
-          </form>
-              </div>
-            </Col>
+
           <Row className="justify-content-between">
             <Col xs="5">
               <h3>{t.aboutprj}</h3>
@@ -182,7 +155,6 @@ export default function IndexPage() {
                 </Row>
               </Col>
             </Col>
-          
             <Col xs="6">
               <div className="Calculator">
               <iframe
