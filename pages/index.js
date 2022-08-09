@@ -30,7 +30,7 @@ export default function IndexPage() {
           <Carousel style={{ opacity: 1 }} className="carousle__inner">
             <Carousel.Item className="fuul__width">
             <div >
-                <video autoplay="" loop="true" muted="" className="video">
+                <video  autoPlay="" loop={true} muted="" className="video">
                     <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
                 </video>
             </div>
@@ -43,8 +43,8 @@ export default function IndexPage() {
               </Col>
             </Carousel.Item>
             <Carousel.Item className="fuul__width">
-            <div class="video">
-            <video autoplay="" loop="true" muted="" className="video">
+            <div>
+            <video  autoPlay="" loop={true} muted="" className="video">
                     <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
                 </video>
             </div>
