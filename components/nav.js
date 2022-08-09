@@ -41,7 +41,7 @@ export default function Nav({ mode, setMode }) {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse navbar13" id="navbarNav">
-          <ul className="navbar-nav ul13">
+          <ul className="navbar-nav ">
             <li className="nav-item active">
               <a className="nav-link" href="/About">
                 {" "}
@@ -69,23 +69,27 @@ export default function Nav({ mode, setMode }) {
               </a>
             </li>
           </ul>
-          <ul className="navbar-nav ul13">
-          <li className="nav-item">
-            <select onChange={changeLanguage} defaultValue={locale} className="form-select ">
-              <option className="text-white" value="en">
-                EN
-              </option>
-              <option className="text-white" value="ru">
-                RU
-              </option>
-              <option className="text-white" value="ge">
-                GE
-              </option>
-            </select>
+          <ul className="navbar-nav ">
+            <li className="nav-item nav-styles">
+              <select
+                onChange={changeLanguage}
+                defaultValue={locale}
+                className="form-select nav-styles-select"
+              >
+                <option className="text-white" value="en">
+                  EN
+                </option>
+                <option className="text-white" value="ru">
+                  RU
+                </option>
+                <option className="text-white" value="ge">
+                  GE
+                </option>
+              </select>
             </li>
             <li className="nav-item">
               <Form>
-                <Form.Check onClick={myFunction} type="switch" id="custom-switch"/>
+                <Form.Check onClick={myFunction} type="switch" id="custom-switch" />
               </Form>
             </li>
           </ul>
