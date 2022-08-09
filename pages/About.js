@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button, Row, Container, Col, input } from "react-bootstrap";
 import en from "../locales/enAbout";
 import ru from "../locales/ruAbout";
+import ge from "../locales/geAbout";
 import Beqa from "../assets/beqa.svg";
 import Quote from "../assets/quote.svg";
 import Team1 from "../assets/apartteam/team1.webp";
@@ -31,7 +32,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : ru;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
     <main>

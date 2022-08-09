@@ -11,83 +11,92 @@ export default {
   att3: "",
   tth: "OUR TEAM",
   //line break
-  tt1: "თათა დგებუაძე",
-  tt1p: "აღმასრულებელი დირექტორი",
+  tt1: "Gia Khoperia",
+  tt1p: "General Director",
   //line break
   //line break
-  tt2: "თათა დგებუაძე",
-  tt2p: "აღმასრულებელი დირექტორი",
+  tt2: "Tata Dgebuadze",
+  tt2p: "Executive Director",
   //line break
   //line break
-  tt3: "თათა დგებუაძე",
-  tt3p: "აღმასრულებელი დირექტორი",
+  tt3: "Tornike Tsilosani",
+  tt3p: "Commercial Director",
   //line break
   //line break
-  tt4: "თათა დგებუაძე",
-  tt4p: "აღმასრულებელი დირექტორი",
+  tt4: "Lasha Sabadze",
+  tt4p: "Financial Manager",
   //line break
   //line break
-  tt5: "თათა დგებუაძე",
-  tt5p: "აღმასრულებელი დირექტორი",
+  tt5: "Vakhtang Chikhradze",
+  tt5p: "Strategic Sales Manager",
   //line break
   //line break
-  tt6: "თათა დგებუაძე",
-  tt6p: "აღმასრულებელი დირექტორი",
+  tt6: "Ani Murvanidze",
+  tt6p: "Head of Sales Department",
   //line break
   //line break
-  tt7: "თათა დგებუაძე",
-  tt7p: "აღმასრულებელი დირექტორი",
+  tt7: "Saba Janashia",
+  tt7p: "Head of the Sefety Service",
   //line break
   //line break
-  tt8: "თათა დგებუაძე",
-  tt8p: "აღმასრულებელი დირექტორი",
+  tt8: "Archil Kurtskhalia",
+  tt8p: "Architect-Designer",
   //line break
   //line break
-  tt9: "თათა დგებუაძე",
-  tt9p: "აღმასრულებელი დირექტორი",
+  tt9: "Natuka Khoperia",
+  tt9p: "Office Manager",
   //line break
   //line break
-  tt10: "თათა დგებუაძე",
-  tt10p: "აღმასრულებელი დირექტორი",
+  tt10: "Giorgi Japaridze",
+  tt10p: "Chief Accountant",
   //line break
   //line break
-  tt11: "თათა დგებუაძე",
-  tt11p: "აღმასრულებელი დირექტორი",
+  tt11: "Irakli Chrikishvili",
+  tt11p: "Chief Lawyer",
   //line break
   //line break
-  tt12: "თათა დგებუაძე",
-  tt12p: "აღმასრულებელი დირექტორი",
+  tt12: "Tika Samkharadze",
+  tt12p: "Social Media Manager",
   //line break
   //line break
-  tt13: "თათა დგებუაძე",
-  tt13p: "აღმასრულებელი დირექტორი",
+  tt13: "Anano Jighauri",
+  tt13p: "Public Relations Manager",
   //line break
   //line break
-  tt14: "თათა დგებუაძე",
-  tt14p: "აღმასრულებელი დირექტორი",
+  tt14: "Levan Kandelaki",
+  tt14p: "Project Manager",
   //line break
   //line break
-  tt15: "თათა დგებუაძე",
-  tt15p: "აღმასრულებელი დირექტორი",
+  tt15: "Avtandil Sephiashvili",
+  tt15p: "Project Manager",
   //line break
   //line break
-  tt16: "თათა დგებუაძე",
-  tt16p: "აღმასრულებელი დირექტორი",
+  tt16: "Mamuka Baratashvili",
+  tt16p: "Architect",
   //line break
   //line break
-  tt17: "თათა დგებუაძე",
-  tt17p: "აღმასრულებელი დირექტორი",
+  tt17: "Sandro Kavelashvili",
+  tt17p: "junior Architect",
   //line break
   //line break
-  tt18: "თათა დგებუაძე",
-  tt18p: "აღმასრულებელი დირექტორი",
+  tt18: "Liza Lazashvili",
+  tt18p: "Junior Lawyer",
   //line break
   //line break
-  tt19: "თათა დგებუაძე",
-  tt19p: "აღმასრულებელი დირექტორი",
+  tt19: "Kakha Pirtskhalava",
+  tt19p: "Head of Construction",
   //line break
   //line break
-  tt20: "თათა დგებუაძე",
-  tt20xp: "აღმასრულებელი დირექტორი",
+  tt20: "Irakli Iobashvili",
+  tt20xp: "Logistics Manager",
+  //line break
+  tt21: "Lasha Chikobava",
+  tt21xp: "Supply Manager",
+  //line break
+  tt22: "Tornike Sikharulidze",
+  tt22xp: "Warehouse Manager",
+  //line break
+  tt23: "Kakha Gabatashvili",
+  tt23xp: "Assistant to the Head of Construction",
   //line break
 };

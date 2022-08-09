@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button, Row, Container, Col, input, Form } from "react-bootstrap";
 import en from "../locales/enProjectFloorSelector";
 import ru from "../locales/ruProjectsFloorSelector";
+import ge from "../locales/geProjectsFloorSelector";
 // import Link from "next/link";
 // import Taghi from "../assets/Taghi_old_tbilisi.svg";
 // import Bukhaidze from "../assets/projects_floor.png";
@@ -15,7 +16,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : ru;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
     <main>

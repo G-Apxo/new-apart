@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button, Row, Container, Col, input } from "react-bootstrap";
 import en from "../locales/enSingleBlog";
 import ru from "../locales/ruSingleBlog";
+import ge from "../locales/geSingleBlog";
 import Link from "next/link";
 import BannerImg from "../assets/singleblog.png";
 
@@ -12,7 +13,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : ru;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
     <main>

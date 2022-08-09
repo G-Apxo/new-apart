@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Button, Row, Container, Col, input, Form } from "react-bootstrap";
 import en from "../locales/enInvesting";
 import ru from "../locales/ruInvesting";
+import ge from "../locales/geInvesting";
 import Video from "../assets/video.svg";
 import Sample from "../assets/sample.png";
 
@@ -12,7 +13,7 @@ export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : ru;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
     <main>

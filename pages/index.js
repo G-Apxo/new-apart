@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Row, Col, Container, Form, Button } from "react-bootstrap";
 import en from "../locales/enHome";
 import ru from "../locales/ruHome";
+import ge from "../locales/geHome";
 import Slide1 from "../assets/slider.png";
 import Taghi from "../assets/taghi.svg";
 import Apart_showroom from "../assets/apartshowroom.svg";
@@ -18,7 +19,7 @@ export default function IndexPage() {
   const [mode, setMode] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : ru;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
     <div>
@@ -35,14 +36,14 @@ export default function IndexPage() {
                   <div className="test">
                     <Image src={Taghi} alt="banner immage" className="Taghi" />
                     <p>
-                      {t.slider1}
+                      {t.oldCityP}
                       <br />
-                      {t.slider2}
+                      {t.taghi}
                       <br />
                       <br />
-                      {t.slider3}
+                      {t.ezo}
                       <br />
-                      {t.slider4}
+                      {t.bukhaidze}
                     </p>
                   </div>
                 </Col>

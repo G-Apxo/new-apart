@@ -3,13 +3,14 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Logo from "../assets/logo.svg";
 import en from "../locales/enHeader";
-import fr from "../locales/fr";
+import ru from "../locales/ruHeader";
+import ge from "../locales/geHeader";
 import { Container, Form } from "react-bootstrap";
 
 export default function Nav({ mode, setMode }) {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   const changeLanguage = e => {
     const locale = e.target.value;

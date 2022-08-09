@@ -1,22 +1,22 @@
-import Nav from '../components/nav';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import { useState } from 'react';
+import Nav from "../components/nav";
+import Image from "next/image";
+import { useRouter } from "next/router";
+import { useState } from "react";
 import { Button, Row, Container, Col, input } from "react-bootstrap";
-import en from '../locales/en';
-import fr from '../locales/fr';
+import en from "../locales/enBlog";
+import ru from "../locales/ruBlog";
+import ge from "../locales/geBlog";
 import Link from "next/link";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
   const router = useRouter();
   const { locale } = router;
-  const t = locale === 'en' ? en : fr;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
     <main>
       <div className="hero">
-         
         <Nav />
         <div>
           <Container>
