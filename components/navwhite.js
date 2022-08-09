@@ -25,73 +25,82 @@ export default function Nav({ mode, setMode }) {
   }
   return (
     <div className="nav__container">
-    <Container>
-      <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand nav_white" href="/">
-          <Image src={Logo} alt="Picture of the author" />
-        </a>
-        <button 
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse navbar13" id="navbarNav">
-          <ul className="navbar-nav ul13">
-            <li className="nav-item active">
-              <a className="nav-link text-white" href="/About">
-                {t.about}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="/Investing">
-                {t.investing}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="/projects">
-                {t.projects}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="/Blog">
-                {t.blog}
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-white" href="/Contact">
-                {t.contact}
-              </a>
-            </li>
-          </ul>
-          <ul className="navbar-nav ul13">
-          <li className="nav-item">
-            <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop_white">
-              <option className="text-white" value="en">
-                EN
-              </option>
-              <option className="text-white" value="ru">
-                RU
-              </option>
-              <option className="text-white" value="ge">
-                GE
-              </option>
-            </select>
-            </li>
-            <li className="nav-item">
-              <Form>
-                <Form.Check onClick={myFunction} type="switch" id="custom-switch" className="white__switcher" />
-              </Form>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      {/* <nav className='navbar navbar-expand-lg navbar-light'>
+      <Container>
+        <nav className="navbar navbar-expand-lg navbar-light">
+          <a className="navbar-brand nav_white" href="/">
+            <Image src={Logo} alt="Picture of the author" />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse navbar13" id="navbarNav">
+            <ul className="navbar-nav ">
+              <li className="nav-item active">
+                <a className="nav-link text-white" href="/About">
+                  {t.about}
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/Investing">
+                  {t.investing}
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/projects">
+                  {t.projects}
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/Blog">
+                  {t.blog}
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link text-white" href="/Contact">
+                  {t.contact}
+                </a>
+              </li>
+            </ul>
+            <ul className="navbar-nav ">
+              <li className="nav-item nav-style">
+                <select
+                  onChange={changeLanguage}
+                  defaultValue={locale}
+                  className="form-select lang__drop_white "
+                >
+                  <option className="text-white" value="en">
+                    EN
+                  </option>
+                  <option className="text-white" value="ru">
+                    RU
+                  </option>
+                  <option className="text-white" value="ge">
+                    GE
+                  </option>
+                </select>
+              </li>
+              <li className="nav-item">
+                <Form>
+                  <Form.Check
+                    onClick={myFunction}
+                    type="switch"
+                    id="custom-switch"
+                    className="white__switcher"
+                  />
+                </Form>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        {/* <nav className='navbar navbar-expand-lg navbar-light'>
         <ul className="flex navbar-nav">
           <li>
             <Link href="/">
@@ -160,7 +169,7 @@ export default function Nav({ mode, setMode }) {
           </ul>
         </ul>
       </nav> */}
-    </Container>
+      </Container>
     </div>
   );
 }

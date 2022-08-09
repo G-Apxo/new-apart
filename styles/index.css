@@ -679,8 +679,7 @@ a.nav-link {
   /* padding: 30px; */
   margin: 0;
 }
-.nav_white{
-
+.nav_white {
 }
 /* .container-borderer:last-child {
   border-bottom: 1px solid black;
@@ -1501,4 +1500,14 @@ flickity-enabled {
 .carousle__inner {
   margin-top: -11.5vh;
   z-index: -1;
+}
+
+.nav-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lang__drop_white {
+  all: unset;
+  color: #fff;
 }
