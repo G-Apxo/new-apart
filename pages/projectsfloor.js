@@ -190,7 +190,7 @@ export default function IndexPage() {
                     height="480"
                     loading="lazy"
                     frameBorder="0"
-                    src="https://jovial-eclair-7745d5.netlify.app/frame/"
+                    src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
                   ></iframe>
                 </div>
               </Col>
