@@ -1,7 +1,7 @@
 import Nav from "../components/nav";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { Button, Row, Container, Col, input, Form } from "react-bootstrap";
 import en from "../locales/enProjectFloor";
 import ru from "../locales/ruProjectsFloor";
@@ -16,6 +16,16 @@ export default function IndexPage() {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
+
+  const calcInputVal = useRef(0);
+  const calcInputVal2 = useRef(0);
+  const calcInputVal3 = useRef(0);
+
+  const [calc, setCalc] = useState(0);
+
+  const calculated = () => {
+    setCalc(calcInputVal + calcInputVal2 + calcInputVal3);
+  };
 
   return (
     <div>
@@ -111,96 +121,92 @@ export default function IndexPage() {
             </Row>
           </form>
           <Col xs="12 mt-5 mb-5">
-              <div className="Calculator">
-                <form action="/send-data-here" method="post">
-                  <Row className=" mt-5 form-row align-items-center">
-                    <Col xs="6">
-                      <label htmlFor="name"></label>
-                      <input className="form-control" type="text" id="name" name="name" placeholder="price" />
-                    </Col>
-                    <Col xs="6">
-                      <label htmlFor="email"></label>
-                      <input className="form-control" type="mail" id="email" name="email" placeholder="amount" />
-                    </Col>
-                    <Col xs="12">
-                      <label htmlFor="tel"></label>
-                      <input
-                        className="form-control"
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="test teqst"
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                        required
-                      />
-                    </Col>
-                  </Row>
-                </form>
-              </div>
+            <input
+              type="text"
+              className="calculator"
+              placeholder="Price 1"
+              defaultValue="0"
+              ref={calcInputVal}
+            />
+            <input
+              type="text"
+              className="calculator"
+              placeholder="Price 2"
+              defaultValue="0"
+              ref={calcInputVal2}
+            />
+            <input
+              type="text"
+              className="calculator"
+              placeholder="Price 3"
+              defaultValue="0"
+              ref={calcInputVal3}
+            />
+            <input type="text" className="calculator" placeholder={calc} value={calculated} />
           </Col>
           <Row className="justify-content-between">
-              <Col xs="5">
-                <h3>{t.aboutprj}</h3>
-                <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
-                <Col xs="12">
-                  <Row>
-                    <h3>{t.adv}</h3>
-                    <h5 className="projects-floor-first-one">{t.first}</h5>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <h5 className="projects-floor-first-one">{t.first}</h5>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                  </Row>
-                  <Row>
-                    <h5 className="projects-floor-first-one">{t.first}</h5>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                    <Col xs="4">
-                      <h5>{t.bigBrain}</h5>
-                    </Col>
-                  </Row>
-                </Col>
+            <Col xs="5">
+              <h3>{t.aboutprj}</h3>
+              <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
+              <Col xs="12">
+                <Row>
+                  <h3>{t.adv}</h3>
+                  <h5 className="projects-floor-first-one">{t.first}</h5>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                </Row>
+                <Row>
+                  <h5 className="projects-floor-first-one">{t.first}</h5>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                </Row>
+                <Row>
+                  <h5 className="projects-floor-first-one">{t.first}</h5>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                  <Col xs="4">
+                    <h5>{t.bigBrain}</h5>
+                  </Col>
+                </Row>
               </Col>
-              <Col xs="6" className="d-flex justify-content-center align-items-center">
-                <div className="">
-                  <iframe
-                    allowFullScreen
-                    width="640"
-                    height="480"
-                    loading="lazy"
-                    frameBorder="0"
-                    src="https://jovial-eclair-7745d5.netlify.app/frame/"
-                  ></iframe>
-                </div>
-              </Col>
+            </Col>
+            <Col xs="6" className="d-flex justify-content-center align-items-center">
+              <div className="">
+                <iframe
+                  allowFullScreen
+                  width="640"
+                  height="480"
+                  loading="lazy"
+                  frameBorder="0"
+                  src="https://jovial-eclair-7745d5.netlify.app/frame/"
+                ></iframe>
+              </div>
+            </Col>
           </Row>
           <Col xs="12" className="mt-120">
             <iframe
               src="https://snazzymaps.com/embed/408105"
               width="100%"
               height="600px"
-            // style="border:none;"
+              // style="border:none;"
             ></iframe>
           </Col>
         </Container>

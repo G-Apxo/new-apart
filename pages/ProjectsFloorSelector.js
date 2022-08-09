@@ -204,7 +204,7 @@ export default function IndexPage() {
           </Col>
         </Container>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
