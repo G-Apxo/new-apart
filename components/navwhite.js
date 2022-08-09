@@ -1,15 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo_white.svg";
 import en from "../locales/enHeader";
-import fr from "../locales/fr";
+import ru from "../locales/ruHeader";
+import ge from "../locales/geHeader";
 import { Container, Form } from "react-bootstrap";
 
-export default function navwhite({ mode, setMode }) {
+export default function Nav({ mode, setMode }) {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   const changeLanguage = e => {
     const locale = e.target.value;
@@ -26,7 +27,7 @@ export default function navwhite({ mode, setMode }) {
     <div className="nav__container">
     <Container>
       <nav className="navbar navbar-expand-lg navbar-light">
-        <a className="navbar-brand" href="/">
+        <a className="navbar-brand nav_white" href="/">
           <Image src={Logo} alt="Picture of the author" />
         </a>
         <button 
@@ -44,8 +45,7 @@ export default function navwhite({ mode, setMode }) {
           <ul className="navbar-nav ul13">
             <li className="nav-item active">
               <a className="nav-link text-white" href="/About">
-                {" "}
-                {t.about} <span className="sr-only">(current)</span>
+                {t.about}
               </a>
             </li>
             <li className="nav-item">
