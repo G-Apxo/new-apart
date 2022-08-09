@@ -37,6 +37,10 @@ export default function IndexPage() {
                     <Image src={Taghi} alt="banner immage" className="Taghi" />
                     <p>
                       {t.oldCityP}
+                      {t.oldCityP}
+                      {t.oldCityP}
+                      {t.oldCityP}
+                      {t.oldCityP}
                       <br />
                       {t.taghi}
                       <br />
