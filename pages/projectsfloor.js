@@ -182,8 +182,8 @@ export default function IndexPage() {
                   </Row>
                 </Col>
               </Col>
-              <Col xs="6">
-                <div className="Calculator">
+              <Col xs="6" className="d-flex justify-content-center align-items-center">
+                <div className="">
                   <iframe
                     allowFullScreen
                     width="640"
