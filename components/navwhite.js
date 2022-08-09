@@ -3,14 +3,13 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import Logo from "../assets/logo.svg";
 import en from "../locales/enHeader";
-import ru from "../locales/ruHeader";
-import ge from "../locales/geHeader";
+import fr from "../locales/fr";
 import { Container, Form } from "react-bootstrap";
 
-export default function Nav({ mode, setMode }) {
+export default function navwhite({ mode, setMode }) {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : locale === "ru" ? ru : ge;
+  const t = locale === "en" ? en : fr;
 
   const changeLanguage = e => {
     const locale = e.target.value;
@@ -24,12 +23,13 @@ export default function Nav({ mode, setMode }) {
     element.classlist = "dark-mode" ? setMode(false) : setMode(true);
   }
   return (
+    <div className="nav__container">
     <Container>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <a className="navbar-brand" href="/">
           <Image src={Logo} alt="Picture of the author" />
         </a>
-        <button
+        <button 
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -43,35 +43,35 @@ export default function Nav({ mode, setMode }) {
         <div className="collapse navbar-collapse navbar13" id="navbarNav">
           <ul className="navbar-nav ul13">
             <li className="nav-item active">
-              <a className="nav-link" href="/About">
+              <a className="nav-link text-white" href="/About">
                 {" "}
                 {t.about} <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Investing">
+              <a className="nav-link text-white" href="/Investing">
                 {t.investing}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/projects">
+              <a className="nav-link text-white" href="/projects">
                 {t.projects}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Blog">
+              <a className="nav-link text-white" href="/Blog">
                 {t.blog}
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/Contact">
+              <a className="nav-link text-white" href="/Contact">
                 {t.contact}
               </a>
             </li>
           </ul>
           <ul className="navbar-nav ul13">
           <li className="nav-item">
-            <select onChange={changeLanguage} defaultValue={locale} className="form-select ">
+            <select onChange={changeLanguage} defaultValue={locale} className="form-select lang__drop_white">
               <option className="text-white" value="en">
                 EN
               </option>
@@ -85,7 +85,7 @@ export default function Nav({ mode, setMode }) {
             </li>
             <li className="nav-item">
               <Form>
-                <Form.Check onClick={myFunction} type="switch" id="custom-switch"/>
+                <Form.Check onClick={myFunction} type="switch" id="custom-switch" className="white__switcher" />
               </Form>
             </li>
           </ul>
@@ -161,5 +161,6 @@ export default function Nav({ mode, setMode }) {
         </ul>
       </nav> */}
     </Container>
+    </div>
   );
 }

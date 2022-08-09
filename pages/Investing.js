@@ -8,6 +8,7 @@ import ru from "../locales/ruInvesting";
 import ge from "../locales/geInvesting";
 import Video from "../assets/video.svg";
 import Sample from "../assets/sample.png";
+import Footer from "../components/footer";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -184,6 +185,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }

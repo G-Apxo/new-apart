@@ -11,6 +11,7 @@ import ge from "../locales/geProjectsFloorSelector";
 // import Bukhaidze from "../assets/projects_floor.png";
 import RoomImage from "../assets/Asset41.png";
 import RoomImageModel from "../assets/apex.png";
+import Footer from "../components/footer";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -203,6 +204,7 @@ export default function IndexPage() {
           </Col>
         </Container>
       </div>
+      <Footer/>
     </main>
   );
 }

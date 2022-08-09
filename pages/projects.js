@@ -9,6 +9,7 @@ import ge from "../locales/geProjecs";
 import Link from "next/link";
 import Slide1 from "../assets/oldcitypanorama.png";
 import Vector from "../assets/seeprjvector.png";
+import Footer from "../components/footer";
 
 export default function IndexPage() {
   const [showBanner, setBanner] = useState(true);
@@ -51,7 +52,7 @@ export default function IndexPage() {
                     <Col xs="12">
                       <Row>
                         <Col xs="12">
-                          <Link href="/ProjectsFloor">
+                          <Link href="/projectsfloor">
                             <div className="mb-5 projects--title cursor">
                               <p>{t.prj1d}</p>
                               <h3>{t.prj1t}</h3>
@@ -62,7 +63,7 @@ export default function IndexPage() {
                           <div className=" projects--texts__basics">
                             <p className="projects--texts__op">{t.prj1l}</p>
                             <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
-                            <Link href="/ProjectsFloor">
+                            <Link href="/projectsfloor">
                               <i className="project--see cursor mt-60 ">
                                 {t.viewPrj} <Image src={Vector} alt="arrow" className="arrow" />
                               </i>
@@ -87,7 +88,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="3" className="">
-                      <Link href="/ProjectsFloor">
+                      <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
                           <p>{t.prj2d}</p>
                           <h3>{t.prj1t}</h3>
@@ -102,7 +103,7 @@ export default function IndexPage() {
                         <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
                       </div>
                       <div>
-                        <Link href="/ProjectsFloor">
+                        <Link href="/projectsfloor">
                           <i className="project--see cursor mt-60">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
@@ -137,7 +138,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="3" className="">
-                      <Link href="/ProjectsFloor">
+                      <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
                           <p>{t.prj1d}</p>
                           <h3>{t.prj2t}</h3>
@@ -152,7 +153,7 @@ export default function IndexPage() {
                         <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
                       </div>
                       <div>
-                        <Link href="/ProjectsFloor">
+                        <Link href="/projectsfloor">
                           <i className="project--see cursor mt-60">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
@@ -186,7 +187,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="3" className="">
-                      <Link href="/ProjectsFloor">
+                      <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
                           <p>{t.prj2d}</p>
                           <h3>{t.prj2t}</h3>
@@ -201,7 +202,7 @@ export default function IndexPage() {
                         <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
                       </div>
                       <div>
-                        <Link href="/ProjectsFloor">
+                        <Link href="/projectsfloor">
                           <i className="project--see cursor mt-60">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
@@ -235,7 +236,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="3" className="">
-                      <Link href="/ProjectsFloor">
+                      <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
                           <p>{t.prj2d}</p>
                           <h3>{t.prj1t}</h3>
@@ -250,7 +251,7 @@ export default function IndexPage() {
                         <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
                       </div>
                       <div>
-                        <Link href="/ProjectsFloor">
+                        <Link href="/projectsfloor">
                           <i className="project--see cursor mt-60">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
@@ -284,7 +285,7 @@ export default function IndexPage() {
                 <Container className="container-borderer">
                   <Row>
                     <Col xs="3" className="">
-                      <Link href="/ProjectsFloor">
+                      <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
                           <p>{t.prj2d}</p>
                           <h3>{t.prj2t}</h3>
@@ -299,7 +300,7 @@ export default function IndexPage() {
                         <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
                       </div>
                       <div>
-                        <Link href="/ProjectsFloor">
+                        <Link href="/projectsfloor">
                           <i className="project--see cursor mt-60">
                             {t.viewPrj} <Image src={Vector} />
                           </i>
@@ -331,6 +332,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
+      <Footer/>
     </main>
   );
 }
