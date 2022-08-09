@@ -25,7 +25,7 @@ export default function Nav({ mode, setMode }) {
   }
   return (
     <Container>
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav className="navbar navbar-expand-lg navbar-light">
         <a className="navbar-brand" href="/">
           <Image src={Logo} alt="Picture of the author" />
         </a>

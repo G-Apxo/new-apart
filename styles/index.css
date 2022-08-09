@@ -8,7 +8,7 @@
 }
 
 .hero {
-  height: 800px;
+  height: auto;
 }
 
 .bg-image {
@@ -681,7 +681,7 @@ a.nav-link {
   margin: 0;
 }
 .nav_white{
-  
+
 }
 /* .container-borderer:last-child {
   border-bottom: 1px solid black;

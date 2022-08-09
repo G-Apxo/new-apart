@@ -24,7 +24,7 @@ export default function IndexPage() {
 
   return (
     <div>
-      <main>
+      <div>
         <div className="hero">
           <Navwhite mode={mode} setMode={setMode} />
           <Carousel style={{ opacity: 1 }} className="carousle__inner">
@@ -259,7 +259,7 @@ export default function IndexPage() {
         </section> */}
           <Footer />
         </div>
-      </main>
+      </div>
     </div>
   );
 }

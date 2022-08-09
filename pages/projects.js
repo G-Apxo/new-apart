@@ -18,7 +18,7 @@ export default function IndexPage() {
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
-    <main>
+    <div>
       <div className="hero">
         <Nav />
         <div>
@@ -333,6 +333,6 @@ export default function IndexPage() {
         </div>
       </div>
       <Footer />
-    </main>
+    </div>
   );
 }

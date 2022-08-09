@@ -20,7 +20,7 @@ export default function IndexPage() {
   const t = locale === "en" ? en : locale === "ru" ? ru : ge;
 
   return (
-    <main>
+    <div>
       <div className="hero">
         <Nav />
         <Container>
@@ -205,6 +205,6 @@ export default function IndexPage() {
         </Container>
       </div>
       <Footer/>
-    </main>
+    </div>
   );
 }
