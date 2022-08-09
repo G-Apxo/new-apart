@@ -16,7 +16,7 @@ function Footer() {
     };
 
   return (
-      <div className="footer-inside-white footer-inside-black mt-60">
+      <div className="footer-inside-white footer-inside-black ">
         <Container>
           <Row>
             <Col md={2}>
