@@ -274,17 +274,6 @@ export default function IndexPage() {
         <p className="my-8">{t.p2}</p>
         <p className="mb-16">{t.p3}</p>
       </article> */}
-      {showBanner && (
-        <div className="flex flex-col items-center pt-4 bg-gray-800 text-white fixed bottom-0 w-full bg-opacity-80 p-4 text-center">
-          <p>{t.cookies}</p>
-          <button
-            onClick={() => setBanner(false)}
-            className="px-4 py-2 w-40 border-2 border-white bg-gray-600 hover:bg-gray-800 transition rounded mt-4"
-          >
-            {t.button}
-          </button>
-        </div>
-      )}
     </main>
   );
 }
