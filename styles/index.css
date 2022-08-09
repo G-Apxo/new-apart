@@ -1511,3 +1511,9 @@ flickity-enabled {
   all: unset;
   color: #fff;
 }
+.calculator {
+  all: unset;
+  border-bottom: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+}
