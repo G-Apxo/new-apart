@@ -110,54 +110,81 @@ export default function IndexPage() {
               </Col>
             </Row>
           </form>
-
-          <Row className="justify-content-between">
-            <Col xs="5">
-              <h3>{t.aboutprj}</h3>
-              <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
-              <Col xs="12">
-                <Row>
-                  <h3>{t.adv}</h3>
-                  <h5 className="projects-floor-first-one">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-                <Row>
-                  <h5 className="projects-floor-first-one">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-                <Row>
-                  <h5 className="projects-floor-first-one">{t.first}</h5>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                  <Col xs="4">
-                    <h5>{t.bigBrain}</h5>
-                  </Col>
-                </Row>
-              </Col>
-            </Col>
-            <Col xs="6">
+          <Col xs="12 mt-5 mb-5">
               <div className="Calculator">
-              <iframe
+                <form action="/send-data-here" method="post">
+                  <Row className=" mt-5 form-row align-items-center">
+                    <Col xs="6">
+                      <label htmlFor="name"></label>
+                      <input className="form-control" type="text" id="name" name="name" placeholder="price" />
+                    </Col>
+                    <Col xs="6">
+                      <label htmlFor="email"></label>
+                      <input className="form-control" type="mail" id="email" name="email" placeholder="amount" />
+                    </Col>
+                    <Col xs="12">
+                      <label htmlFor="tel"></label>
+                      <input
+                        className="form-control"
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="test teqst"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        required
+                      />
+                    </Col>
+                  </Row>
+                </form>
+              </div>
+          </Col>
+          <Row className="justify-content-between">
+              <Col xs="5">
+                <h3>{t.aboutprj}</h3>
+                <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
+                <Col xs="12">
+                  <Row>
+                    <h3>{t.adv}</h3>
+                    <h5 className="projects-floor-first-one">{t.first}</h5>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <h5 className="projects-floor-first-one">{t.first}</h5>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <h5 className="projects-floor-first-one">{t.first}</h5>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                    <Col xs="4">
+                      <h5>{t.bigBrain}</h5>
+                    </Col>
+                  </Row>
+                </Col>
+              </Col>
+              <Col xs="6">
+                <div className="Calculator">
+                  <iframe
                     allowFullScreen
                     width="640"
                     height="480"
@@ -165,20 +192,20 @@ export default function IndexPage() {
                     frameBorder="0"
                     src="https://resilient-ganache-549f6c.netlify.app/frame/"
                   ></iframe>
-              </div>
-            </Col>
+                </div>
+              </Col>
           </Row>
           <Col xs="12" className="mt-120">
             <iframe
               src="https://snazzymaps.com/embed/408105"
               width="100%"
               height="600px"
-              // style="border:none;"
+            // style="border:none;"
             ></iframe>
           </Col>
         </Container>
       </div>
-      <Footer/>
+      <Footer />
     </main>
   );
 }

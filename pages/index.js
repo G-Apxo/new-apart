@@ -2,7 +2,8 @@ import Nav from "../components/nav";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { Row, Col, Container, Form, Button } from "react-bootstrap";
+import { Row, Col, Container, Form, Button, } from "react-bootstrap";
+import Carousel from 'react-bootstrap/Carousel';
 import en from "../locales/enHome";
 import ru from "../locales/ruHome";
 import ge from "../locales/geHome";
@@ -10,7 +11,7 @@ import Slide1 from "../assets/slider.png";
 import Taghi from "../assets/taghi.svg";
 import Apart_showroom from "../assets/apartshowroom.svg";
 import Footer from "../components/footer";
-
+import Navwhite from "../components/navwhite";
 import Malongo from "../assets/malongo2.png";
 import Tbc from "../assets/tbc-logo-geo2.svg";
 
@@ -25,9 +26,35 @@ export default function IndexPage() {
     <div>
       <main>
         <div className="hero">
-          <Nav mode={mode} setMode={setMode} />
+          <Navwhite mode={mode} setMode={setMode} />
+          <Carousel style={{ opacity: 1 }} className="carousle__inner">
+            <Carousel.Item className="fuul__width">
+            <div >
+                <video autoplay="" loop="true" muted="" className="video">
+                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
+                <Col className="d-flex align-items-center">
+                  <div className="test">
+                    <Image src={Taghi} alt="banner immage" className="Taghi" />
+                  </div>
+                </Col>
+              </Col>
+            </Carousel.Item>
+            <Carousel.Item className="fuul__width">
+            <div class="video">
+            <video autoplay="" loop="true" muted="" className="video">
+                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
+                </video>
+            </div>
+            </Carousel.Item>
+          </Carousel>
           <Container>
             <Row>
+    
+          </Row>
+              <Row>
               <Col lg="6" md="6" sm="6" xl="6" xxl="6">
                 <Image src={Slide1} />
               </Col>
@@ -36,10 +63,6 @@ export default function IndexPage() {
                   <div className="test">
                     <Image src={Taghi} alt="banner immage" className="Taghi" />
                     <p>
-                      {t.oldCityP}
-                      {t.oldCityP}
-                      {t.oldCityP}
-                      {t.oldCityP}
                       {t.oldCityP}
                       <br />
                       {t.taghi}

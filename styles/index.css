@@ -1490,7 +1490,16 @@ flickity-enabled {
   margin-bottom: 0 !important;
 } */
 
-.white__switcher{
+.white__switcher.form-check-input{
   background-color: transparent !important;
+}
+.video{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.carousle__inner{
+  margin-top: -11.5vh;
+  z-index: -1;
 }
 
