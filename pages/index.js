@@ -24,7 +24,6 @@ export default function IndexPage() {
   return (
     <div>
       <main>
-<<<<<<< HEAD
         <div className="hero">
           <Nav mode={mode} setMode={setMode} />
           <Container>
@@ -33,26 +32,11 @@ export default function IndexPage() {
                 <Image src={Slide1} />
               </Col>
               <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
-=======
-          <Navwhite mode={mode} setMode={setMode} />
-          <Carousel style={{ opacity: 1 }}>
-            <Carousel.Item className="fuul__width">
-            <div className="video">
-                <video autoplay="" loop="true" muted="">
-                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
-                </video>
-            </div>
-            <Col lg="6" md="6" sm="6" xl="6" xxl="6" className="d-flex">
->>>>>>> parent of 5fbd053 (make banner stick to full width)
                 <Col className="d-flex align-items-center">
                   <div className="test">
                     <Image src={Taghi} alt="banner immage" className="Taghi" />
                     <p>
-<<<<<<< HEAD
                       {t.oldCityP}
-=======
-                      {t.slider1}
->>>>>>> parent of 5fbd053 (make banner stick to full width)
                       <br />
                       {t.taghi}
                       <br />
@@ -64,32 +48,6 @@ export default function IndexPage() {
                   </div>
                 </Col>
               </Col>
-<<<<<<< HEAD
-=======
-            </Carousel.Item>
-            <Carousel.Item className="fuul__width">
-              <Row>
-              <div class="video">
-                <video autoplay="" loop="true" muted="">
-                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
-                </video>
-            </div>
-              </Row>
-            </Carousel.Item>
-            <Carousel.Item className="fuul__width">
-              <Row>
-              <div class="video">
-                <video autoplay="" loop="true" muted="">
-                    <source src="https://apart.ge/high-test.mp4" type="video/mp4" />
-                </video>
-            </div>
-              </Row>
-            </Carousel.Item>
-          </Carousel>
-          <Container>
-            <Row>
-             
->>>>>>> parent of 5fbd053 (make banner stick to full width)
             </Row>
           </Container>
           <Container className="container-marginer additional__padding">

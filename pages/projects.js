@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Button, Row, Container, Col, Carousel } from "react-bootstrap";
 import en from "../locales/enProjects";
 import ru from "../locales/ruProjecs";
-import ge from "../locales/geProjecs";
+import ge from "../locales/geProjects";
 import Link from "next/link";
 import Slide1 from "../assets/oldcitypanorama.png";
 import Vector from "../assets/seeprjvector.png";
