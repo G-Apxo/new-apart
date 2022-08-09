@@ -212,14 +212,14 @@ export default function IndexPage() {
               className="d-flex justify-content-center align-items-center"
             >
               <div className="">
-                <iframe
-                  allowFullScreen
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  frameBorder="0"
-                  src="https://62f2cf4636aef120ef069fa3--fluffy-fairy-e91678.netlify.app/"
-                ></iframe>
+              <iframe
+allowFullScreen
+width="640"
+height="480"
+loading="lazy"
+frameBorder="0"
+src="https://62f2db7ad9a68729ee046f70--genuine-sprite-2fa12c.netlify.app/"
+></iframe>
               </div>
             </Col>
           </Row>
