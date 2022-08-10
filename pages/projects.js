@@ -91,16 +91,16 @@ export default function IndexPage() {
                       <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
                           <p>{t.prj2d}</p>
-                          <h3>{t.prj1t}</h3>
+                          <h3>{t.prj2t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">{t.prj1l}</p>
-                        <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
+                        <p className="projects--texts__op">{t.prj2l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj2lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj2c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
                       </div>
                       <div>
                         <Link href="/projectsfloor">
@@ -140,17 +140,17 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>{t.prj1d}</p>
-                          <h3>{t.prj2t}</h3>
+                          <p>{t.prj3d}</p>
+                          <h3>{t.prj3t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">{t.prj2l}</p>
-                        <h3 className="project--location__mod projects--texts__basics">{t.prj2lt}</h3>
+                        <p className="projects--texts__op">{t.prj3l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj3lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">{t.prj2c}</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj3c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj3ct}</h3>
                       </div>
                       <div>
                         <Link href="/projectsfloor">
@@ -189,17 +189,17 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>{t.prj2d}</p>
-                          <h3>{t.prj2t}</h3>
+                          <p>{t.prj4d}</p>
+                          <h3>{t.prj4t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">{t.prj2l}</p>
-                        <h3 className="project--location__mod projects--texts__basics">{t.prj2lt}</h3>
+                        <p className="projects--texts__op">{t.prj4l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj4lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">{t.prj2c}</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj4c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj4ct}</h3>
                       </div>
                       <div>
                         <Link href="/projectsfloor">
@@ -238,17 +238,17 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>{t.prj2d}</p>
-                          <h3>{t.prj1t}</h3>
+                          <p>{t.prj5d}</p>
+                          <h3>{t.prj5t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">{t.prj1l}</p>
-                        <h3 className="project--location__mod projects--texts__basics">{t.prj1lt}</h3>
+                        <p className="projects--texts__op">{t.prj5l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj5lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">{t.prj1c}</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj1ct}</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj5c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj5ct}</h3>
                       </div>
                       <div>
                         <Link href="/projectsfloor">
@@ -287,17 +287,17 @@ export default function IndexPage() {
                     <Col xs="3" className="">
                       <Link href="/projectsfloor">
                         <div className="mb-5 projects--title cursor">
-                          <p>{t.prj2d}</p>
-                          <h3>{t.prj2t}</h3>
+                          <p>{t.prj5d}</p>
+                          <h3>{t.prj5t}</h3>
                         </div>
                       </Link>
                       <div className="projects--legend__top projects--texts__basics">
-                        <p className="projects--texts__op">{t.prj2l}</p>
-                        <h3 className="project--location__mod projects--texts__basics">{t.prj2lt}</h3>
+                        <p className="projects--texts__op">{t.prj5l}</p>
+                        <h3 className="project--location__mod projects--texts__basics">{t.prj5lt}</h3>
                       </div>
                       <div className="projects--legend__bot">
-                        <p className="projects--texts__op projects--texts__create">{t.prj2c}</p>
-                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj2ct}</h3>
+                        <p className="projects--texts__op projects--texts__create">{t.prj5c}</p>
+                        <h3 className="projects--texts__basics projects--texts__done ">{t.prj5ct}</h3>
                       </div>
                       <div>
                         <Link href="/projectsfloor">

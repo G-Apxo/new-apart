@@ -92,6 +92,8 @@ export default function Nav({ mode, setMode }) {
                 <Form.Check onClick={myFunction} type="switch" id="custom-switch" />
               </Form>
             </li>
+            <li>{t.v}</li>
+            <li>{t.w}</li>
           </ul>
         </div>
       </nav>

@@ -97,6 +97,8 @@ export default function Nav({ mode, setMode }) {
                   />
                 </Form>
               </li>
+              <li>{t.v}</li>
+              <li>{t.w}</li>
             </ul>
           </div>
         </nav>

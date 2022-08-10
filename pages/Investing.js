@@ -22,13 +22,13 @@ export default function IndexPage() {
         <Nav />
         <div>
           <div className="contact__section">
-            <Container className="mt-120 mb-120">
+            <Container className="mt-120 ">
               <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                 <h3 className="investing-title">{t.title}</h3>
                 <p className="investing-title_subtext">{t.tp1}</p>
               </Col>
             </Container>
-            <Container className="mt-120 mb-120">
+            <Container className="mt-60 mb-120">
               <Row>
                 <Col xs="12" lg="6" md="6" sm="6" xl="6" xxl="6">
                   <Image src={Video} alt="banner immage" />
@@ -58,9 +58,9 @@ export default function IndexPage() {
               </Row>
             </Container>
             <Container>
-              <Row className="investing-goal mb-80">
+              {/* <Row className="investing-goal mb-80">
                 <h3>{t.bonus}</h3>
-              </Row>
+              </Row> */}
               <Row className="investing-goal mb-80">
                 <h3>{t.goal}</h3>
               </Row>
@@ -185,7 +185,7 @@ export default function IndexPage() {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

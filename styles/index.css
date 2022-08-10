@@ -1415,6 +1415,7 @@ flickity-enabled {
 }
 .investing-title {
   font-size: 34px;
+  margin-bottom: 60px;
 }
 .investing-title_subtext {
   font-size: 16px;
@@ -1425,6 +1426,7 @@ flickity-enabled {
   justify-content: center;
   list-style-type: none;
   counter-reset: css-counter 0;
+  white-space: nowrap;
 }
 .investing-services li {
   /* all: unset; */
@@ -1516,4 +1518,12 @@ flickity-enabled {
   border-bottom: 1px solid black;
   padding: 5px;
   margin: 10px;
+}
+.about-htext-styles {
+  margin-top: 10px;
+}
+.about-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
