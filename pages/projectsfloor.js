@@ -97,11 +97,23 @@ export default function IndexPage() {
             <Row className=" mt-5 form-row align-items-center">
               <Col xs="3">
                 <label htmlFor="name"></label>
-                <input className="btn-test" type="text" id="name" name="name" placeholder={t.name} />
+                <input
+                  className="btn-test"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder={t.name}
+                />
               </Col>
               <Col xs="3">
                 <label htmlFor="email"></label>
-                <input className="btn-test" type="mail" id="email" name="email" placeholder={t.email} />
+                <input
+                  className="btn-test"
+                  type="mail"
+                  id="email"
+                  name="email"
+                  placeholder={t.email}
+                />
               </Col>
               <Col xs="3">
                 <label htmlFor="tel"></label>
@@ -142,12 +154,19 @@ export default function IndexPage() {
               defaultValue="0"
               ref={calcInputVal3}
             />
-            <input type="text" className="calculator" placeholder={calc} value={calculated} />
+            <input
+              type="text"
+              className="calculator"
+              placeholder={calc}
+              value={calculated}
+            />
           </Col>
           <Row className="justify-content-between">
             <Col xs="5">
               <h3>{t.aboutprj}</h3>
-              <p className="projects--floor-about-text basic-texts-14">{t.apt}</p>
+              <p className="projects--floor-about-text basic-texts-14">
+                {t.apt}
+              </p>
               <Col xs="12">
                 <Row>
                   <h3>{t.adv}</h3>
@@ -188,16 +207,19 @@ export default function IndexPage() {
                 </Row>
               </Col>
             </Col>
-            <Col xs="6" className="d-flex justify-content-center align-items-center">
+            <Col
+              xs="6"
+              className="d-flex justify-content-center align-items-center"
+            >
               <div className="">
-                <iframe
-                  allowFullScreen
-                  width="640"
-                  height="480"
-                  loading="lazy"
-                  frameBorder="0"
-                  src="https://jovial-eclair-7745d5.netlify.app/frame/"
-                ></iframe>
+              <iframe
+allowFullScreen
+width="640"
+height="480"
+loading="lazy"
+frameBorder="0"
+src="https://62f2db7ad9a68729ee046f70--genuine-sprite-2fa12c.netlify.app/"
+></iframe>
               </div>
             </Col>
           </Row>
@@ -206,7 +228,7 @@ export default function IndexPage() {
               src="https://snazzymaps.com/embed/408105"
               width="100%"
               height="600px"
-              // style="border:none;"
+            // style="border:none;"
             ></iframe>
           </Col>
         </Container>
