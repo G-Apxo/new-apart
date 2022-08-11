@@ -1510,8 +1510,15 @@ flickity-enabled {
   justify-content: center;
 }
 .lang__drop_white {
-  all: unset;
-  color: #fff;
+  all: unset !important;
+  color: #fff !important;
+  position: relative;
+}
+.nav-styles-select::after {
+  content: url("../assets/langArrowWhite.png");
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .calculator {
   all: unset;
@@ -1526,4 +1533,10 @@ flickity-enabled {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.navbar-nav:nth-child(-n + 2) {
+  color: white;
+}
+.navbar-nav li:last-child {
+  margin: 0 10px;
 }

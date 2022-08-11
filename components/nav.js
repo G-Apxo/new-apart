@@ -70,7 +70,7 @@ export default function Nav({ mode, setMode }) {
             </li>
           </ul>
           <ul className="navbar-nav ">
-            <li className="nav-item nav-styles">
+            <li className="nav-item nav-styles lang__drop_white">
               <select
                 onChange={changeLanguage}
                 defaultValue={locale}
